@@ -1,14 +1,30 @@
 # KCacheSim
 
 ## Instructions
-sudo apt-get update
+These instructions have been tested on a clean Ubuntu 20.04 installation running on a CloudLab C6420 machine.
+Make sure you have sudo access and at least 100GB free space for application datasets and logs.
 
-pushd valgrind
+Clone the repository and submodules
+```
+# TODO: Clone command
+```
 
-./autogen.sh && \
-./configure --prefix=$(pwd)/build/ && \
-make -j$(nproc) && \
-make install
+Install dependencies
+```
+<repo_dir>/scripts/setup.sh
+```
 
-popd
+Run everything
+```
+python3 <repo_dir>/scripts/sweep.py
+```
 
+All logs will be generated in `logs` directory
+
+Finally, generate all plots
+```
+TODO: Add
+```
+
+# Citations
+TODO: Add

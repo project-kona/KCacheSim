@@ -24,24 +24,24 @@ simulator = sims[0]
 cache_max_size = 1024*1024*1024*1024
 cache_min_size = 0
 exp_groups = {
-    "test": {
-        "apps" : ["turi"],
-        "cache_perc_list" : [2.5],
-        "block_sizes" : [4*1024],
-        "assocs" : [4],
-    },
-    # "sizes": {
-    #     "apps" : ["redis", "metis", "turi"],
-    #     "cache_perc_list" : [2.5, 1.0, 0.75, 0.5, 0.25, 0.1, 0.05],
+    # "test": {
+    #     "apps" : ["turi"],
+    #     "cache_perc_list" : [2.5],
     #     "block_sizes" : [4*1024],
     #     "assocs" : [4],
     # },
-    # "blocks": {
-    #     "apps" : ["redis"],
-    #     "cache_perc_list" : [2.5, 1.0, 0.75, 0.5, 0.25, 0.1, 0.05],
-    #     "block_sizes" : [4*1024, 64, 256, 512, 1*1024, 8*4*1024],
-    #     "assocs" : [4],
-    # }
+    "sizes": {
+        "apps" : ["redis", "metis", "turi"],
+        "cache_perc_list" : [2.5, 1.0, 0.75, 0.5, 0.25, 0.1, 0.05],
+        "block_sizes" : [4*1024],
+        "assocs" : [4],
+    },
+    "blocks": {
+        "apps" : ["redis"],
+        "cache_perc_list" : [2.5, 1.0, 0.75, 0.5, 0.25, 0.1, 0.05],
+        "block_sizes" : [4*1024, 64, 256, 512, 1*1024, 8*4*1024],
+        "assocs" : [4],
+    }
 }
 
 #############################################
@@ -187,7 +187,7 @@ def get_cache_configs(peak_mem, num_cores, simulator, exp, l1_to_l3=True, beyond
 
     return configs
 
-def get_apps_profiles(apps, simulator, runs, exp):
+def get_apps_profiles(apps, simulator, runs, exp, counter):
 
     profiles_all = dict()
     for a, details in apps.items():
@@ -206,22 +206,24 @@ def get_apps_profiles(apps, simulator, runs, exp):
                     profile = {
                         "dir"           : details["dir"],
                         "method"        : m,
-                        "unique_id"     : (len(profiles)),
+                        "unique_id"     : (len(profiles) + counter),
                         "run"           : r,
                     }
                     profile.update(c)
                     profiles.append(profile)
 
+                    counter += 1
+
         profiles_all[a] = profiles
 
-    return profiles_all
+    return (profiles_all, counter)
 
 def setup_logging(log_filename):
 
     if os.path.dirname(log_filename):
         os.system("mkdir -p " + os.path.dirname(log_filename))
 
-    logFormatter = logging.Formatter("[%(levelname)-5.5s]  %(message)s")
+    logFormatter = logging.Formatter("[%(asctime)s][%(levelname)-5.5s]  %(message)s")
     rootLogger = logging.getLogger()
     rootLogger.setLevel(logging.DEBUG)
     
@@ -248,12 +250,13 @@ if __name__ == "__main__":
     setup_logging(logfile)
 
     profiles = {}
+    counter = 0
     for ee in exp_groups:
         select_apps = {}
         for aa in exp_groups[ee]["apps"]:
             select_apps[aa] = apps[aa]
 
-        new_profs = get_apps_profiles(select_apps, simulator, runs, exp_groups[ee])
+        (new_profs, counter) = get_apps_profiles(select_apps, simulator, runs, exp_groups[ee], counter)
         for aa_new in new_profs:
             if aa_new not in profiles:
                 profiles[aa_new] = []
@@ -265,7 +268,7 @@ if __name__ == "__main__":
     logging.info("Executing: ")
     logging.info("*************************************")
 
-    executor = ThreadPoolExecutor(max_workers=1)
+    executor = ThreadPoolExecutor(max_workers=32)
 
     with executor:
         futures = []

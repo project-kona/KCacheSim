@@ -1,0 +1,82 @@
+==79402== Cachegrind, a cache and branch-prediction profiler
+==79402== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==79402== Using Valgrind-3.16.0.GIT-74b01035ef-20200315 and LibVEX; rerun with -h for copyright info
+==79402== Command: ./src/redis-server ./redis.conf --port 30064
+==79402== Parent PID: 79382
+==79402== 
+--79402-- 
+--79402-- Valgrind options:
+--79402--    --tool=cachegrind
+--79402--    --I1=32768,8,64
+--79402--    --D1=32768,8,64
+--79402--    --L2=1073741824,4,4096
+--79402--    --cachegrind-out-file=/store/KCacheSim/scripts/../logs//redis/sim-cachegrind-method-rand-config-size=1073741824*block=4096*assoc=4-run-0.cachegrind.detail
+--79402--    --log-file=/store/KCacheSim/scripts/../logs//redis/sim-cachegrind-method-rand-config-size=1073741824*block=4096*assoc=4-run-0.cachegrind.out
+--79402--    -v
+--79402--    --trace-children=yes
+--79402-- Contents of /proc/version:
+--79402--   Linux version 5.4.0-51-generic (buildd@lcy01-amd64-020) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #56-Ubuntu SMP Mon Oct 5 14:28:49 UTC 2020
+--79402-- 
+--79402-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand
+--79402-- Page sizes: currently 4096, max supported 4096
+--79402-- Valgrind library directory: /store/KCacheSim/valgrind/build/lib/valgrind
+--79402-- warning: L3 cache found, using its data for the LL simulation.
+==79402== Cache configuration used:
+==79402==   I1: 32,768 B, 8-way, 64 B lines
+==79402==   D1: 32,768 B, 8-way, 64 B lines
+==79402==   LL: 1,073,741,824 B, 4-way, 4096 B lines
+--79402-- Reading syms from /store/KCacheSim/apps/redis/redis/src/redis-server
+--79402-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-2.31.so
+--79402--   Considering /usr/lib/x86_64-linux-gnu/ld-2.31.so ..
+--79402--   .. CRC mismatch (computed 387b17ea wanted d28cf5ef)
+--79402--    object doesn't have a symbol table
+--79402-- Reading syms from /store/KCacheSim/valgrind/build/lib/valgrind/cachegrind-amd64-linux
+--79402--    object doesn't have a dynamic symbol table
+--79141-- Scheduler: using generic scheduler lock implementation.
+==79141== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-79141-by-timran-on-???
+==79141== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-79141-by-timran-on-???
+==79141== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-79141-by-timran-on-???
+==79141== 
+==79141== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==79141== don't want to do, unless you know exactly what you're doing,
+==79141== or are doing some strange experiment):
+==79141==   /store/KCacheSim/valgrind/build/lib/valgrind/../../bin/vgdb --pid=79141 ...command...
+==79141== 
+==79141== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==79141==   /path/to/gdb ./src/redis-server
+==79141== and then give GDB the following command
+==79141==   target remote | /store/KCacheSim/valgrind/build/lib/valgrind/../../bin/vgdb --pid=79141
+==79141== --pid is optional if only one valgrind process is running
+==79141== 
+--79141-- Reading syms from /store/KCacheSim/valgrind/build/lib/valgrind/vgpreload_core-amd64-linux.so
+--79141-- Reading syms from /usr/lib/x86_64-linux-gnu/libm-2.31.so
+--79141--   Considering /usr/lib/x86_64-linux-gnu/libm-2.31.so ..
+--79141--   .. CRC mismatch (computed 327d785f wanted 751f5509)
+--79141--    object doesn't have a symbol table
+--79141-- Reading syms from /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+--79141--   Considering /usr/lib/x86_64-linux-gnu/libdl-2.31.so ..
+--79141--   .. CRC mismatch (computed 4fd191ca wanted df8dd39a)
+--79141--    object doesn't have a symbol table
+--79141-- Reading syms from /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+--79141--   Considering /usr/lib/debug/.build-id/77/5cbbfff814456660786780b0b3b40096b4c05e.debug ..
+--79141--   .. build-id is valid
+--79141-- Reading syms from /usr/lib/x86_64-linux-gnu/libc-2.31.so
+--79141--   Considering /usr/lib/x86_64-linux-gnu/libc-2.31.so ..
+--79141--   .. CRC mismatch (computed a6f43087 wanted 6555436e)
+--79141--    object doesn't have a symbol table
+==79402== 
+==79402== I   refs:      336,567,776,234
+==79402== I1  misses:        982,262,796
+==79402== LLi misses:              5,437
+==79402== I1  miss rate:            0.29%
+==79402== LLi miss rate:            0.00%
+==79402== 
+==79402== D   refs:      123,009,025,734  (85,645,904,391 rd   + 37,363,121,343 wr)
+==79402== D1  misses:      1,274,886,232  (   903,414,781 rd   +    371,471,451 wr)
+==79402== LLd misses:         81,319,786  (    78,983,388 rd   +      2,336,398 wr)
+==79402== D1  miss rate:             1.0% (           1.1%     +            1.0%  )
+==79402== LLd miss rate:             0.1% (           0.1%     +            0.0%  )
+==79402== 
+==79402== LL refs:         2,257,149,028  ( 1,885,677,577 rd   +    371,471,451 wr)
+==79402== LL misses:          81,325,223  (    78,988,825 rd   +      2,336,398 wr)
+==79402== LL miss rate:              0.0% (           0.0%     +            0.0%  )

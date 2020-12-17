@@ -1,0 +1,23 @@
+desc: I1 cache:         32768 B, 64 B, 8-way associative
+desc: D1 cache:         32768 B, 64 B, 8-way associative
+desc: LL cache:         536870912 B, 64 B, 4-way associative
+cmd: ./src/redis-server ./redis.conf --port 30078
+events: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw 
+fl=???
+fn=???
+0 38144 422 419 7849 264 261 2288 271 271
+fn=__tunable_get_val
+0 214 2 2 44 0 0 11 0 0
+fn=_dl_catch_error
+0 23 2 2 7 0 0 7 0 0
+fn=_dl_catch_exception
+0 165 4 4 31 0 0 62 3 3
+fn=_dl_debug_state
+0 2 0 0 1 0 0 0 0 0
+fn=calloc
+0 55 2 2 0 0 0 0 0 0
+fn=free
+0 20 0 0 8 0 0 0 0 0
+fn=malloc
+0 453 4 4 88 0 0 88 1 1
+summary: 39076 436 433 8028 264 261 2456 275 275

@@ -1,0 +1,34 @@
+==84254== Cachegrind, a cache and branch-prediction profiler
+==84254== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==84254== Using Valgrind-3.16.0.GIT-74b01035ef-20200315 and LibVEX; rerun with -h for copyright info
+==84254== Command: ./src/redis-server ./redis.conf --port 30084
+==84254== Parent PID: 84249
+==84254== 
+--84254-- 
+--84254-- Valgrind options:
+--84254--    --tool=cachegrind
+--84254--    --I1=32768,8,64
+--84254--    --D1=32768,8,64
+--84254--    --L2=536870912,4,1024
+--84254--    --cachegrind-out-file=/store/KCacheSim/scripts/../logs//redis/sim-cachegrind-method-rand-config-size=536870912*block=1024*assoc=4-run-0.cachegrind.detail
+--84254--    --log-file=/store/KCacheSim/scripts/../logs//redis/sim-cachegrind-method-rand-config-size=536870912*block=1024*assoc=4-run-0.cachegrind.out
+--84254--    -v
+--84254--    --trace-children=yes
+--84254-- Contents of /proc/version:
+--84254--   Linux version 5.4.0-51-generic (buildd@lcy01-amd64-020) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #56-Ubuntu SMP Mon Oct 5 14:28:49 UTC 2020
+--84254-- 
+--84254-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand
+--84254-- Page sizes: currently 4096, max supported 4096
+--84254-- Valgrind library directory: /store/KCacheSim/valgrind/build/lib/valgrind
+--84254-- warning: L3 cache found, using its data for the LL simulation.
+==84254== Cache configuration used:
+==84254==   I1: 32,768 B, 8-way, 64 B lines
+==84254==   D1: 32,768 B, 8-way, 64 B lines
+==84254==   LL: 536,870,912 B, 4-way, 1024 B lines
+--84254-- Reading syms from /store/KCacheSim/apps/redis/redis/src/redis-server
+--84254-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-2.31.so
+--84254--   Considering /usr/lib/x86_64-linux-gnu/ld-2.31.so ..
+--84254--   .. CRC mismatch (computed 387b17ea wanted d28cf5ef)
+--84254--    object doesn't have a symbol table
+--84254-- Reading syms from /store/KCacheSim/valgrind/build/lib/valgrind/cachegrind-amd64-linux
+--84254--    object doesn't have a dynamic symbol table

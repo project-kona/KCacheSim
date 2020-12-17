@@ -1,0 +1,32 @@
+/store/KCacheSim/apps/metis/Metis /store/KCacheSim
++ OUTPUT_PREFIX='/store/KCacheSim/scripts/../logs//metis/sim-cachegrind-method-linreg-config-size=137438953472*block=4096*assoc=4-run-0'
++ CACHE_PARAMS='--I1=32768,8,64  --D1=32768,8,64 --L2=137438953472,4,4096'
++ COMMAND='./obj/linear_regression ./data/lr_40GB.txt -p 8'
+++ dirname '/store/KCacheSim/scripts/../logs//metis/sim-cachegrind-method-linreg-config-size=137438953472*block=4096*assoc=4-run-0'
++ mkdir -p /store/KCacheSim/scripts/../logs//metis
++ /store/KCacheSim/scripts/../valgrind/build/bin/valgrind --tool=cachegrind --I1=32768,8,64 --D1=32768,8,64 --L2=137438953472,4,4096 '--cachegrind-out-file=/store/KCacheSim/scripts/../logs//metis/sim-cachegrind-method-linreg-config-size=137438953472*block=4096*assoc=4-run-0.cachegrind.detail' '--log-file=/store/KCacheSim/scripts/../logs//metis/sim-cachegrind-method-linreg-config-size=137438953472*block=4096*assoc=4-run-0.cachegrind.out' -v --trace-children=yes ./obj/linear_regression ./data/lr_40GB.txt -p 8
++ popd
+/store/KCacheSim
+	Command being timed: "/store/KCacheSim/scripts/../apps//metis/test.sh cachegrind 12 --I1=32768,8,64  --D1=32768,8,64 --L2=137438953472,4,4096 /store/KCacheSim/scripts/../logs//metis/sim-cachegrind-method-linreg-config-size=137438953472*block=4096*assoc=4-run-0 linreg"
+	User time (seconds): 1513.54
+	System time (seconds): 21.04
+	Percent of CPU this job got: 17%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:23:55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 24582036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6095
+	Minor (reclaiming a frame) page faults: 856693
+	Voluntary context switches: 146895
+	Involuntary context switches: 89330
+	Swaps: 0
+	File system inputs: 13446936
+	File system outputs: 224
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,29 @@
++ OUTPUT_PREFIX='/store/KCacheSim/scripts/../logs//turi/sim-cachegrind-method-graphcol-config-size=1073741824*block=4096*assoc=4-run-0'
++ CACHE_PARAMS='--I1=32768,8,64  --D1=32768,8,64 --L2=1073741824,4,4096'
++ COMMAND='python /store/KCacheSim/apps/turi//app_graph_analytics.py -g twitter -a graphcol'
+++ dirname '/store/KCacheSim/scripts/../logs//turi/sim-cachegrind-method-graphcol-config-size=1073741824*block=4096*assoc=4-run-0'
++ mkdir -p /store/KCacheSim/scripts/../logs//turi
++ /store/KCacheSim/scripts/../valgrind/build/bin/valgrind --tool=cachegrind --I1=32768,8,64 --D1=32768,8,64 --L2=1073741824,4,4096 '--cachegrind-out-file=/store/KCacheSim/scripts/../logs//turi/sim-cachegrind-method-graphcol-config-size=1073741824*block=4096*assoc=4-run-0.cachegrind.detail' '--log-file=/store/KCacheSim/scripts/../logs//turi/sim-cachegrind-method-graphcol-config-size=1073741824*block=4096*assoc=4-run-0.cachegrind.out' -v --trace-children=yes python /store/KCacheSim/apps/turi//app_graph_analytics.py -g twitter -a graphcol
+	Command being timed: "/store/KCacheSim/scripts/../apps//turi/test.sh cachegrind 28 --I1=32768,8,64  --D1=32768,8,64 --L2=1073741824,4,4096 /store/KCacheSim/scripts/../logs//turi/sim-cachegrind-method-graphcol-config-size=1073741824*block=4096*assoc=4-run-0 graphcol"
+	User time (seconds): 168978.83
+	System time (seconds): 746.48
+	Percent of CPU this job got: 101%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 46:30:55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7342816
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2349
+	Minor (reclaiming a frame) page faults: 152736768
+	Voluntary context switches: 55307056
+	Involuntary context switches: 165583
+	Swaps: 0
+	File system inputs: 1371880
+	File system outputs: 6880
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

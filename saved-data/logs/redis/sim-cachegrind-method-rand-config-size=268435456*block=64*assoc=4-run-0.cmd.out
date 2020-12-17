@@ -1,0 +1,28 @@
+84550:C 15 Dec 2020 01:27:22.231 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+84550:C 15 Dec 2020 01:27:22.243 # Redis version=255.255.255, bits=64, commit=9acd40d9, modified=1, pid=84550, just started
+84550:C 15 Dec 2020 01:27:22.243 # Configuration loaded
+84550:M 15 Dec 2020 01:27:22.277 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 255.255.255 (9acd40d9/1) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 30090
+ |    `-._   `._    /     _.-'    |     PID: 84550
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+84550:M 15 Dec 2020 01:27:22.403 # Server initialized
+84550:M 15 Dec 2020 01:27:22.459 * Ready to accept connections
+84550:signal-handler (1608017977) Received SIGINT scheduling shutdown...
+84550:M 15 Dec 2020 02:39:37.458 # User requested shutdown...
+84550:M 15 Dec 2020 02:39:37.461 * Removing the pid file.
+84550:M 15 Dec 2020 02:39:37.463 # Redis is now ready to exit, bye bye...

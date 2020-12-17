@@ -1,0 +1,331 @@
+/store/KCacheSim/apps/redis/redis /store/KCacheSim
+/store/KCacheSim
++ OUTPUT_PREFIX='/store/KCacheSim/scripts/../logs//redis/sim-cachegrind-method-rand-config-size=268435456*block=1024*assoc=4-run-0'
++ CACHE_PARAMS='--I1=32768,8,64  --D1=32768,8,64 --L2=268435456,4,1024'
++ COMMAND='./src/redis-server ./redis.conf --port 30096'
+++ dirname '/store/KCacheSim/scripts/../logs//redis/sim-cachegrind-method-rand-config-size=268435456*block=1024*assoc=4-run-0'
++ mkdir -p /store/KCacheSim/scripts/../logs//redis
++ /store/KCacheSim/scripts/../valgrind/build/bin/valgrind --tool=cachegrind --I1=32768,8,64 --D1=32768,8,64 --L2=268435456,4,1024 '--cachegrind-out-file=/store/KCacheSim/scripts/../logs//redis/sim-cachegrind-method-rand-config-size=268435456*block=1024*assoc=4-run-0.cachegrind.detail' '--log-file=/store/KCacheSim/scripts/../logs//redis/sim-cachegrind-method-rand-config-size=268435456*block=1024*assoc=4-run-0.cachegrind.out' -v --trace-children=yes ./src/redis-server ./redis.conf --port 30096
+84905
+Waiting for Redis to start
+Writing results to stdout
+[RUN #1] Preparing benchmark client...
+[RUN #1] Launching threads now...
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+Connection error: Connection refused
+[RUN #1 0%,   0 secs]  0 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency
+
+10        Threads
+20        Connections per thread
+400000    Requests per client
+
+
+ALL STATS
+============================================================================================================================
+Type         Ops/sec     Hits/sec   Misses/sec    Avg. Latency     p50 Latency     p99 Latency   p99.9 Latency       KB/sec 
+----------------------------------------------------------------------------------------------------------------------------
+Sets            0.00          ---          ---             ---             ---             ---             ---         0.00 
+Gets            0.00         0.00         0.00             ---             ---             ---             ---         0.00 
+Waits           0.00          ---          ---             ---             ---             ---             ---          --- 
+Totals          0.00         0.00         0.00            -nan         0.00000         0.00000         0.00000         0.00 
+++ pgrep --parent 84901
++ time_pid=84905
+++ pgrep --parent 84905
++ redis_pid=
+++ pgrep --parent
+pgrep: option '--parent' requires an argument
+
+Usage:
+ pgrep [options] <pattern>
+
+Options:
+ -d, --delimiter <string>  specify output delimiter
+ -l, --list-name           list PID and process name
+ -a, --list-full           list PID and full command line
+ -v, --inverse             negates the matching
+ -w, --lightweight         list all TID
+ -c, --count               count of matching processes
+ -f, --full                use full process name to match
+ -g, --pgroup <PGID,...>   match listed process group IDs
+ -G, --group <GID,...>     match real group IDs
+ -i, --ignore-case         match case insensitively
+ -n, --newest              select most recently started
+ -o, --oldest              select least recently started
+ -P, --parent <PPID,...>   match only child processes of the given parent
+ -s, --session <SID,...>   match session IDs
+ -t, --terminal <tty,...>  match by controlling terminal
+ -u, --euid <ID,...>       match by effective IDs
+ -U, --uid <ID,...>        match by real IDs
+ -x, --exact               match exactly with the command name
+ -F, --pidfile <file>      read PIDs from file
+ -L, --logpidfile          fail if PID file is not locked
+ -r, --runstates <state>   match runstates [D,S,Z,...]
+ --ns <PID>                match the processes that belong to the same
+                           namespace as <pid>
+ --nslist <ns,...>         list which namespaces will be considered for
+                           the --ns option.
+                           Available namespaces: ipc, mnt, net, pid, user, uts
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see pgrep(1).
++ third_pid=
++ echo
+
++ cat /proc//status
+cat: /proc//status: No such file or directory
++ sudo kill -s SIGINT
+
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
++ sudo kill -s SIGINT
+
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
++ sudo kill -s SIGINT 84905
+	Command being timed: "/store/KCacheSim/scripts/../apps//redis/test.sh cachegrind 96 --I1=32768,8,64  --D1=32768,8,64 --L2=268435456,4,1024 /store/KCacheSim/scripts/../logs//redis/sim-cachegrind-method-rand-config-size=268435456*block=1024*assoc=4-run-0 rand"
+	User time (seconds): 0.05
+	System time (seconds): 0.07
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:16.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 22772
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 8435
+	Voluntary context switches: 236
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 32
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

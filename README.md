@@ -28,4 +28,4 @@ python3 ./scripts/gather-results.py
 ```
 All plots will be generated in `plots` directory.
 
-Note: Logs and plots from a sample run are stored in `saved=logs`
+Note: Logs and plots from a sample run are stored in `saved-data`

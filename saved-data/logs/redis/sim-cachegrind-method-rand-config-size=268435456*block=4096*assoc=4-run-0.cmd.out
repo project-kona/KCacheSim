@@ -1,14 +1,13 @@
-84485:C 15 Dec 2020 01:27:11.810 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-84485:C 15 Dec 2020 01:27:11.822 # Redis version=255.255.255, bits=64, commit=9acd40d9, modified=1, pid=84485, just started
-84485:C 15 Dec 2020 01:27:11.823 # Configuration loaded
-84485:M 15 Dec 2020 01:27:11.864 * monotonic clock: POSIX clock_gettime
+73401:C 10 Apr 2020 10:07:52.635 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+73401:C 10 Apr 2020 10:07:52.655 # Redis version=999.999.999, bits=64, commit=767977c5, modified=0, pid=73401, just started
+73401:C 10 Apr 2020 10:07:52.655 # Configuration loaded
                 _._                                                  
            _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 255.255.255 (9acd40d9/1) 64 bit
+      _.-``    `.  `_.  ''-._           Redis 999.999.999 (767977c5/0) 64 bit
   .-`` .-```.  ```\/    _.,_ ''-._                                   
  (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 30088
- |    `-._   `._    /     _.-'    |     PID: 84485
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 30032
+ |    `-._   `._    /     _.-'    |     PID: 73401
   `-._    `-._  `-./  _.-'    _.-'                                   
  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
  |    `-._`-._        _.-'_.-'    |           http://redis.io        
@@ -20,9 +19,10 @@
           `-._        _.-'                                           
               `-.__.-'                                               
 
-84485:M 15 Dec 2020 01:27:12.178 # Server initialized
-84485:M 15 Dec 2020 01:27:12.272 * Ready to accept connections
-79067:signal-handler (1608014219) Received SIGINT scheduling shutdown...
-79067:M 15 Dec 2020 01:37:01.292 # User requested shutdown...
-79067:M 15 Dec 2020 01:37:03.354 * Removing the pid file.
-79067:M 15 Dec 2020 01:37:03.826 # Redis is now ready to exit, bye bye...
+73401:M 10 Apr 2020 10:07:52.891 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+73401:M 10 Apr 2020 10:07:52.892 # Server initialized
+73401:M 10 Apr 2020 10:07:52.957 * Ready to accept connections
+73401:signal-handler (1586535121) Received SIGINT scheduling shutdown...
+73401:M 10 Apr 2020 12:12:01.390 # User requested shutdown...
+73401:M 10 Apr 2020 12:12:01.392 * Removing the pid file.
+73401:M 10 Apr 2020 12:12:01.394 # Redis is now ready to exit, bye bye...

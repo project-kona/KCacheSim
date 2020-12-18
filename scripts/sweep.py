@@ -32,7 +32,7 @@ exp_groups = {
     # },
     "sizes": {
         "apps" : ["redis", "metis", "turi"],
-        "cache_perc_list" : [2.5, 1.0, 0.75, 0.5, 0.25, 0.1, 0.05],
+        "cache_perc_list" : [2.5, 1.0, 0.75, 0.5, 0.25, 0.1, 0.05, 0.02, 0.01, 0.005],
         "block_sizes" : [4*1024],
         "assocs" : [4],
     },

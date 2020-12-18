@@ -1,0 +1,28 @@
+76853:C 10 Apr 2020 12:13:11.713 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+76853:C 10 Apr 2020 12:13:11.734 # Redis version=999.999.999, bits=64, commit=767977c5, modified=0, pid=76853, just started
+76853:C 10 Apr 2020 12:13:11.734 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 999.999.999 (767977c5/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 30050
+ |    `-._   `._    /     _.-'    |     PID: 76853
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+76853:M 10 Apr 2020 12:13:11.992 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+76853:M 10 Apr 2020 12:13:11.992 # Server initialized
+76853:M 10 Apr 2020 12:13:12.088 * Ready to accept connections
+76853:signal-handler (1586542667) Received SIGINT scheduling shutdown...
+76853:M 10 Apr 2020 14:17:47.103 # User requested shutdown...
+76853:M 10 Apr 2020 14:17:47.105 * Removing the pid file.
+76853:M 10 Apr 2020 14:17:47.107 # Redis is now ready to exit, bye bye...

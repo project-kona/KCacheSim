@@ -1,16 +1,16 @@
 Linear regression: running...
 Runtime in millisecond [8 cores]
-	Sample:	1863906	Map:	4659246	Reduce:	24	Merge:	927	Sum:	6524679	Real:	6524691
+	Sample:	186635	Map:	3843726	Reduce:	30	Merge:	568	Sum:	4030961	Real:	4031056
 Number of Tasks of last Metis run
 	Sample:	0	Map:	128	Reduce:	131
  8 Linear Regression Results:
-	a    = -0.504517
-	b    = -0.000336
-	xbar = -0.522449
-	ybar = -0.504341
+	a    = -0.523804
+	b    = -0.000615
+	xbar = -0.514714
+	ybar = -0.523488
 	r2   = 0.000000
-	SX   = -10956556000
-	SY   = -10576800000
-	SXX  = 114522261212000
-	SYY  = 114500546080000
-	SXY  = -32979516000
+	SX   = -10794332000
+	SY   = -10978336000
+	SXX  = 114479806676000
+	SYY  = 114494635168000
+	SXY  = -64704644000

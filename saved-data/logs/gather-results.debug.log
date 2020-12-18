@@ -46,18 +46,6 @@
        4194304: 372430.0,
        8388608: 738840.0}}
 [INFO ]  Looking at redis
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=536870912*block=512*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 536870912, 'block': 512, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010545222621077417,
- 'd1_miss_rd_num': 872239155.0,
- 'd1_miss_wr': 0.009628112296928145,
- 'd1_miss_wr_num': 355294112.0,
- 'dll_miss_rd': 0.002103905016819205,
- 'dll_miss_rd_num': 174022721.0,
- 'dll_miss_wr': 0.0005388237557955962,
- 'dll_miss_wr_num': 19883535.0,
- 'num_reads': 82714152782.0,
- 'num_writes': 36901741592.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=16777216*block=4096*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 16777216, 'block': 4096, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.009951227485190296,
@@ -70,6 +58,18 @@
  'dll_miss_wr_num': 8620234.0,
  'num_reads': 87695513071.0,
  'num_writes': 36344741840.0}
+[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=16777216*block=1024*assoc=4-run-0.cachegrind.out
+[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 16777216, 'block': 1024, 'assoc': 4}, Simulator = cachegrind
+[DEBUG]  {'d1_miss_rd': 0.010559331369180849,
+ 'd1_miss_rd_num': 917361859.0,
+ 'd1_miss_wr': 0.01006143151097694,
+ 'd1_miss_wr_num': 365000026.0,
+ 'dll_miss_rd': 0.004412565729819431,
+ 'dll_miss_rd_num': 383349983.0,
+ 'dll_miss_wr': 0.0006673515770760355,
+ 'dll_miss_wr_num': 24209611.0,
+ 'num_reads': 86876888974.0,
+ 'num_writes': 36277146607.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=2147483648*block=4096*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 2147483648, 'block': 4096, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010861346102315511,
@@ -94,18 +94,6 @@
  'dll_miss_wr_num': 8875858.0,
  'num_reads': 86854374805.0,
  'num_writes': 36267743142.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=8589934592*block=32768*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 8589934592, 'block': 32768, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010853163873131422,
- 'd1_miss_rd_num': 903773660.0,
- 'd1_miss_wr': 0.010186397338564808,
- 'd1_miss_wr_num': 379434528.0,
- 'dll_miss_rd': 1.0993982194448793e-07,
- 'dll_miss_rd_num': 9155.0,
- 'dll_miss_wr': 2.9921497164584363e-06,
- 'dll_miss_wr_num': 111455.0,
- 'num_reads': 83272829063.0,
- 'num_writes': 37249138767.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=2147483648*block=64*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 2147483648, 'block': 64, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010617825810714503,
@@ -130,18 +118,18 @@
  'dll_miss_wr_num': 34320423.0,
  'num_reads': 84126097731.0,
  'num_writes': 37334480717.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=8589934592*block=1024*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 8589934592, 'block': 1024, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.009570383234664753,
- 'd1_miss_rd_num': 344935404.0,
- 'd1_miss_wr': 0.009102313613277383,
- 'd1_miss_wr_num': 146106665.0,
- 'dll_miss_rd': 1.5754136112032715e-05,
- 'dll_miss_rd_num': 567810.0,
- 'dll_miss_wr': 0.00016337502665512903,
- 'dll_miss_wr_num': 2622430.0,
- 'num_reads': 36041963581.0,
- 'num_writes': 16051596463.0}
+[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=16777216*block=32768*assoc=4-run-0.cachegrind.out
+[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 16777216, 'block': 32768, 'assoc': 4}, Simulator = cachegrind
+[DEBUG]  {'d1_miss_rd': 0.010011517656326931,
+ 'd1_miss_rd_num': 869813126.0,
+ 'd1_miss_wr': 0.009930205947324397,
+ 'd1_miss_wr_num': 360263350.0,
+ 'dll_miss_rd': 0.0040504404937258,
+ 'dll_miss_rd_num': 351907316.0,
+ 'dll_miss_wr': 0.00011711886247683635,
+ 'dll_miss_wr_num': 4249019.0,
+ 'num_reads': 86881245767.0,
+ 'num_writes': 36279544645.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=4294967296*block=512*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 4294967296, 'block': 512, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010154943562838173,
@@ -166,30 +154,6 @@
  'dll_miss_wr_num': 1364067.0,
  'num_reads': 86865495443.0,
  'num_writes': 36272673062.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=536870912*block=64*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 536870912, 'block': 64, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.03288490284005979,
- 'd1_miss_rd_num': 264.0,
- 'd1_miss_wr': 0.11197068403908794,
- 'd1_miss_wr_num': 275.0,
- 'dll_miss_rd': 0.032511210762331835,
- 'dll_miss_rd_num': 261.0,
- 'dll_miss_wr': 0.11197068403908794,
- 'dll_miss_wr_num': 275.0,
- 'num_reads': 8028.0,
- 'num_writes': 2456.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=536870912*block=32768*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 536870912, 'block': 32768, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.03288490284005979,
- 'd1_miss_rd_num': 264.0,
- 'd1_miss_wr': 0.11197068403908794,
- 'd1_miss_wr_num': 275.0,
- 'dll_miss_rd': 0.0011210762331838565,
- 'dll_miss_rd_num': 9.0,
- 'dll_miss_wr': 0.0024429967426710096,
- 'dll_miss_wr_num': 6.0,
- 'num_reads': 8028.0,
- 'num_writes': 2456.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=67108864*block=4096*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 67108864, 'block': 4096, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010005961970530178,
@@ -214,18 +178,6 @@
  'dll_miss_wr_num': 187489325.0,
  'num_reads': 48615337419.0,
  'num_writes': 21631624265.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=268435456*block=256*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 268435456, 'block': 256, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010019597213655319,
- 'd1_miss_rd_num': 870380972.0,
- 'd1_miss_wr': 0.009935150845273974,
- 'd1_miss_wr_num': 360383144.0,
- 'dll_miss_rd': 0.0031151987140025194,
- 'dll_miss_rd_num': 270610647.0,
- 'dll_miss_wr': 0.0011354316675625802,
- 'dll_miss_wr_num': 41186132.0,
- 'num_reads': 86867860398.0,
- 'num_writes': 36273545275.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=4294967296*block=256*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 4294967296, 'block': 256, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010112017065094398,
@@ -274,18 +226,18 @@
  'dll_miss_wr_num': 373921.0,
  'num_reads': 84133964229.0,
  'num_writes': 37313294838.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=536870912*block=1024*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 536870912, 'block': 1024, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010012457323510868,
- 'd1_miss_rd_num': 869918182.0,
- 'd1_miss_wr': 0.009931812209958129,
- 'd1_miss_wr_num': 360326652.0,
- 'dll_miss_rd': 0.0018322478970160586,
- 'dll_miss_rd_num': 159192265.0,
- 'dll_miss_wr': 0.0002786408994318882,
- 'dll_miss_wr_num': 10109106.0,
- 'num_reads': 86883584508.0,
- 'num_writes': 36280050849.0}
+[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=16777216*block=64*assoc=4-run-0.cachegrind.out
+[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 16777216, 'block': 64, 'assoc': 4}, Simulator = cachegrind
+[DEBUG]  {'d1_miss_rd': 0.010032998754097626,
+ 'd1_miss_rd_num': 871457959.0,
+ 'd1_miss_wr': 0.009934502385925996,
+ 'd1_miss_wr_num': 360317559.0,
+ 'dll_miss_rd': 0.007431523340364662,
+ 'dll_miss_rd_num': 645495960.0,
+ 'dll_miss_wr': 0.006912332229735545,
+ 'dll_miss_wr_num': 250705529.0,
+ 'num_reads': 86859171456.0,
+ 'num_writes': 36269311235.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=8589934592*block=4096*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 8589934592, 'block': 4096, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.01066569015798969,
@@ -298,18 +250,6 @@
  'dll_miss_wr_num': 779009.0,
  'num_reads': 83981956604.0,
  'num_writes': 37237522914.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=268435456*block=512*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 268435456, 'block': 512, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010118267521663754,
- 'd1_miss_rd_num': 878751769.0,
- 'd1_miss_wr': 0.010000087042746611,
- 'd1_miss_wr_num': 362657154.0,
- 'dll_miss_rd': 0.002789157759411835,
- 'dll_miss_rd_num': 242232903.0,
- 'dll_miss_wr': 0.0005780209277327018,
- 'dll_miss_wr_num': 20962160.0,
- 'num_reads': 86848046577.0,
- 'num_writes': 36265399736.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=1073741824*block=64*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 1073741824, 'block': 64, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010631997054904512,
@@ -322,18 +262,6 @@
  'dll_miss_wr_num': 134947678.0,
  'num_reads': 83954118628.0,
  'num_writes': 37217948589.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=268435456*block=64*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 268435456, 'block': 64, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010560093633514789,
- 'd1_miss_rd_num': 873418721.0,
- 'd1_miss_wr': 0.009628833551299808,
- 'd1_miss_wr_num': 355301091.0,
- 'dll_miss_rd': 0.005120917529996938,
- 'dll_miss_rd_num': 423547877.0,
- 'dll_miss_wr': 0.004407122906430572,
- 'dll_miss_wr_num': 162621523.0,
- 'num_reads': 82709372787.0,
- 'num_writes': 36899702244.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=4294967296*block=32768*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 4294967296, 'block': 32768, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010467005355629402,
@@ -346,18 +274,6 @@
  'dll_miss_wr_num': 107408.0,
  'num_reads': 60672559765.0,
  'num_writes': 27038724655.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=8589934592*block=256*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 8589934592, 'block': 256, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010552571530179822,
- 'd1_miss_rd_num': 884571969.0,
- 'd1_miss_wr': 0.009819281027489885,
- 'd1_miss_wr_num': 364662865.0,
- 'dll_miss_rd': 4.154621563367436e-05,
- 'dll_miss_rd_num': 3482622.0,
- 'dll_miss_wr': 0.0003188488782442435,
- 'dll_miss_wr_num': 11841228.0,
- 'num_reads': 83825252117.0,
- 'num_writes': 37137430325.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=268435456*block=4096*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 268435456, 'block': 4096, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.009989664015583257,
@@ -394,18 +310,6 @@
  'dll_miss_wr_num': 10232855.0,
  'num_reads': 47744081406.0,
  'num_writes': 20901633316.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=8589934592*block=512*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 8589934592, 'block': 512, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010679351770023437,
- 'd1_miss_rd_num': 906100631.0,
- 'd1_miss_wr': 0.009997853805227486,
- 'd1_miss_wr_num': 373175810.0,
- 'dll_miss_rd': 2.1102884130780265e-05,
- 'dll_miss_rd_num': 1790496.0,
- 'dll_miss_wr': 0.00015827741008940353,
- 'dll_miss_wr_num': 5907798.0,
- 'num_reads': 84846032841.0,
- 'num_writes': 37325591799.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=536870912*block=4096*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 536870912, 'block': 4096, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010106648028542106,
@@ -418,30 +322,6 @@
  'dll_miss_wr_num': 3159673.0,
  'num_reads': 86847639348.0,
  'num_writes': 36264752705.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=268435456*block=32768*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 268435456, 'block': 32768, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010508618589450047,
- 'd1_miss_rd_num': 811383978.0,
- 'd1_miss_wr': 0.00958841293942605,
- 'd1_miss_wr_num': 330206869.0,
- 'dll_miss_rd': 0.0028597127995386366,
- 'dll_miss_rd_num': 220802109.0,
- 'dll_miss_wr': 6.359906719307222e-05,
- 'dll_miss_wr_num': 2190232.0,
- 'num_reads': 77211288153.0,
- 'num_writes': 34438115159.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=536870912*block=256*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 536870912, 'block': 256, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.024118084297752855,
- 'd1_miss_rd_num': 132027.0,
- 'd1_miss_wr': 0.042725693112728995,
- 'd1_miss_wr_num': 115299.0,
- 'dll_miss_rd': 0.0003978670090247125,
- 'dll_miss_rd_num': 2178.0,
- 'dll_miss_wr': 0.0016968139252134544,
- 'dll_miss_wr_num': 4579.0,
- 'num_reads': 5474191.0,
- 'num_writes': 2698587.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=2147483648*block=256*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 2147483648, 'block': 256, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010586816905180993,
@@ -478,6 +358,18 @@
  'dll_miss_wr_num': 734316.0,
  'num_reads': 51440185416.0,
  'num_writes': 22733849424.0}
+[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=16777216*block=512*assoc=4-run-0.cachegrind.out
+[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 16777216, 'block': 512, 'assoc': 4}, Simulator = cachegrind
+[DEBUG]  {'d1_miss_rd': 0.009843250600746603,
+ 'd1_miss_rd_num': 872080274.0,
+ 'd1_miss_wr': 0.009894115359574936,
+ 'd1_miss_wr_num': 360481844.0,
+ 'dll_miss_rd': 0.0046548767580416,
+ 'dll_miss_rd_num': 412407076.0,
+ 'dll_miss_wr': 0.001224704340550487,
+ 'dll_miss_wr_num': 44620834.0,
+ 'num_reads': 88596776550.0,
+ 'num_writes': 36433964119.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=2147483648*block=1024*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 2147483648, 'block': 1024, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.010637101226075502,
@@ -502,18 +394,6 @@
  'dll_miss_wr_num': 373474058.0,
  'num_reads': 84153255012.0,
  'num_writes': 37340267012.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=268435456*block=1024*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 268435456, 'block': 1024, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.023456397277185986,
- 'd1_miss_rd_num': 124504.0,
- 'd1_miss_wr': 0.04189157321035531,
- 'd1_miss_wr_num': 108715.0,
- 'dll_miss_rd': 0.00012829954496051257,
- 'dll_miss_rd_num': 681.0,
- 'dll_miss_wr': 0.0005325314278315875,
- 'dll_miss_wr_num': 1382.0,
- 'num_reads': 5307891.0,
- 'num_writes': 2595152.0}
 [INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=33554432*block=4096*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 33554432, 'block': 4096, 'assoc': 4}, Simulator = cachegrind
 [DEBUG]  {'d1_miss_rd': 0.009973200902910664,
@@ -526,18 +406,18 @@
  'dll_miss_wr_num': 8363422.0,
  'num_reads': 87740199312.0,
  'num_writes': 36350594044.0}
-[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=8589934592*block=64*assoc=4-run-0.cachegrind.out
-[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 8589934592, 'block': 64, 'assoc': 4}, Simulator = cachegrind
-[DEBUG]  {'d1_miss_rd': 0.010208004987398584,
- 'd1_miss_rd_num': 516145566.0,
- 'd1_miss_wr': 0.009311124259325227,
- 'd1_miss_wr_num': 209518318.0,
- 'dll_miss_rd': 0.0002403388870959126,
- 'dll_miss_rd_num': 12152213.0,
- 'dll_miss_wr': 0.0019803247545982484,
- 'dll_miss_wr_num': 44561140.0,
- 'num_reads': 50562824630.0,
- 'num_writes': 22501935552.0}
+[INFO ]  Working on: redis - sim-cachegrind-method-rand-config-size=16777216*block=256*assoc=4-run-0.cachegrind.out
+[DEBUG]  Name = Memtier+Redis -R:R, Config = {'size': 16777216, 'block': 256, 'assoc': 4}, Simulator = cachegrind
+[DEBUG]  {'d1_miss_rd': 0.009967781306349727,
+ 'd1_miss_rd_num': 874262673.0,
+ 'd1_miss_wr': 0.009912261705910357,
+ 'd1_miss_wr_num': 360315528.0,
+ 'dll_miss_rd': 0.005294041445609626,
+ 'dll_miss_rd_num': 464334307.0,
+ 'dll_miss_wr': 0.002287796194713416,
+ 'dll_miss_wr_num': 83162503.0,
+ 'num_reads': 87708853769.0,
+ 'num_writes': 36350485761.0}
 [INFO ]  Looking at metis
 [INFO ]  Working on: metis - sim-cachegrind-method-linreg-config-size=536870912*block=4096*assoc=4-run-0.cachegrind.out
 [DEBUG]  Name = Linear Regression - 40GB, Config = {'size': 536870912, 'block': 4096, 'assoc': 4}, Simulator = cachegrind
@@ -811,474 +691,6 @@
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002103905016819205, 0.0005388237557955962)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 130}, 
-AMATs = [9.041488881339339, 4.878850953982112]< 
-AMAT = 7.7621283928756615, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002103905016819205, 0.0005388237557955962)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 82}, 
-AMATs = [8.59757498071164, 4.462817118993531]< 
-AMAT = 7.32678325441679, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002103905016819205, 0.0005388237557955962)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 410}, 
-AMATs = [11.630986635000912, 7.305714991415503]< 
-AMAT = 10.301641700552416, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002103905016819205, 0.0005388237557955962)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 328}, 
-AMATs = [10.872633721428596, 6.59499052331001]< 
-AMAT = 9.55792708901851, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002103905016819205, 0.0005388237557955962)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 246}, 
-AMATs = [10.114280807856275, 5.884266055204517]< 
-AMAT = 8.8142124774846, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002103905016819205, 0.0005388237557955962)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 164}, 
-AMATs = [9.355927894283958, 5.173541587099024]< 
-AMAT = 8.070497865950696, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.032511210762331835, 0.11197068403908794)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 130}, 
-AMATs = [82.24846588245245, 274.44696456350636]< 
-AMAT = 141.3194611132795, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.032511210762331835, 0.11197068403908794)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 82}, 
-AMATs = [81.80455198182474, 274.0309307285178]< 
-AMAT = 140.88411597482062, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.032511210762331835, 0.11197068403908794)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 410}, 
-AMATs = [84.83796363611401, 276.87382860093976]< 
-AMAT = 143.85897442095623, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.032511210762331835, 0.11197068403908794)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 328}, 
-AMATs = [84.0796107225417, 276.1631041328343]< 
-AMAT = 143.11525980942233, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.032511210762331835, 0.11197068403908794)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 246}, 
-AMATs = [83.32125780896938, 275.45237966472877]< 
-AMAT = 142.37154519788842, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.032511210762331835, 0.11197068403908794)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 164}, 
-AMATs = [82.56290489539707, 274.7416551966233]< 
-AMAT = 141.62783058635452, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0011210762331838565, 0.0024429967426710096)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 130}, 
-AMATs = [10.589273057340346, 18.771068798034083]< 
-AMAT = 13.103896327005684, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0011210762331838565, 0.0024429967426710096)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 82}, 
-AMATs = [10.145359156712647, 18.3550349630455]< 
-AMAT = 12.66855118854681, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0011210762331838565, 0.0024429967426710096)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 410}, 
-AMATs = [13.178770811001922, 21.197932835467473]< 
-AMAT = 15.643409634682438, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0011210762331838565, 0.0024429967426710096)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 328}, 
-AMATs = [12.420417897429603, 20.48720836736198]< 
-AMAT = 14.899695023148531, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0011210762331838565, 0.0024429967426710096)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 246}, 
-AMATs = [11.662064983857285, 19.776483899256487]< 
-AMAT = 14.155980411614625, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0011210762331838565, 0.0024429967426710096)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 164}, 
-AMATs = [10.903712070284966, 19.065759431150994]< 
-AMAT = 13.412265800080718, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0018322478970160586, 0.0002786408994318882)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 130}, 
-AMATs = [8.500082680582603, 4.227453208385341]< 
-AMAT = 7.186916985183053, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0018322478970160586, 0.0002786408994318882)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 82}, 
-AMATs = [8.056168779954904, 3.8114193733967596]< 
-AMAT = 6.751571846724182, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0018322478970160586, 0.0002786408994318882)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 410}, 
-AMATs = [11.089580434244176, 6.654317245818731]< 
-AMAT = 9.726430292859808, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0018322478970160586, 0.0002786408994318882)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 328}, 
-AMATs = [10.33122752067186, 5.9435927777132385]< 
-AMAT = 8.982715681325901, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0018322478970160586, 0.0002786408994318882)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 246}, 
-AMATs = [9.57287460709954, 5.2328683096077455]< 
-AMAT = 8.239001069791993, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0018322478970160586, 0.0002786408994318882)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 164}, 
-AMATs = [8.814521693527222, 4.522143841502253]< 
-AMAT = 7.495286458258088, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 130}, 
-AMATs = [8.862183537093612, 3.748877065350926]< 
-AMAT = 7.290641073032503, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 82}, 
-AMATs = [8.418269636465915, 3.3328432303623448]< 
-AMAT = 6.855295934573632, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 410}, 
-AMATs = [11.451681290755186, 6.1757411027843165]< 
-AMAT = 9.830154380709258, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 328}, 
-AMATs = [10.693328377182869, 5.465016634678824]< 
-AMAT = 9.086439769175351, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 246}, 
-AMATs = [9.93497546361055, 4.754292166573331]< 
-AMAT = 8.342725157641445, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 164}, 
-AMATs = [9.176622550038232, 4.043567698467838]< 
-AMAT = 7.599010546107539, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0003978670090247125, 0.0016968139252134544)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 130}, 
-AMATs = [4.581918040532175, 7.787816558955735]< 
-AMAT = 5.56723071150457, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0003978670090247125, 0.0016968139252134544)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 82}, 
-AMATs = [4.138004139904476, 7.371782723967154]< 
-AMAT = 5.131885573045698, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0003978670090247125, 0.0016968139252134544)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 410}, 
-AMATs = [7.171415794193749, 10.214680596389126]< 
-AMAT = 8.106744019181322, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0003978670090247125, 0.0016968139252134544)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 328}, 
-AMATs = [6.413062880621431, 9.503956128283633]< 
-AMAT = 7.363029407647417, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0003978670090247125, 0.0016968139252134544)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 246}, 
-AMATs = [5.654709967049112, 8.79323166017814]< 
-AMAT = 6.619314796113511, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0003978670090247125, 0.0016968139252134544)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 164}, 
-AMATs = [4.896357053476795, 8.082507192072647]< 
-AMAT = 5.875600184579604, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
  'cache': (0.004098909025242574, 0.00023717967341599914)}, 
 Latency = {'L1': 2,
  'L2': 9,
@@ -1354,6 +766,396 @@ Latency = {'L1': 2,
 AMATs = [16.63338191905843, 4.5102286063542305]< 
 AMAT = 12.907407281214251, 
 access_size = 4096
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.004412565729819431, 0.0006673515770760355)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2690.0,
+ 'Remote-WR': 2690.0,
+ 'cache': 130}, 
+AMATs = [15.441137650823674, 5.273084931248097]< 
+AMAT = 12.316050837832584, 
+access_size = 1024
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.004412565729819431, 0.0006673515770760355)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2690.0,
+ 'Remote-WR': 2690.0,
+ 'cache': 82}, 
+AMATs = [14.997223750195975, 4.857051096259516]< 
+AMAT = 11.880705699373713, 
+access_size = 1024
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.004412565729819431, 0.0006673515770760355)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2690.0,
+ 'Remote-WR': 2690.0,
+ 'cache': 410}, 
+AMATs = [18.030635404485245, 7.699948968681488]< 
+AMAT = 14.855564145509339, 
+access_size = 1024
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.004412565729819431, 0.0006673515770760355)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2690.0,
+ 'Remote-WR': 2690.0,
+ 'cache': 328}, 
+AMATs = [17.27228249091293, 6.989224500575995]< 
+AMAT = 14.111849533975432, 
+access_size = 1024
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.004412565729819431, 0.0006673515770760355)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2690.0,
+ 'Remote-WR': 2690.0,
+ 'cache': 246}, 
+AMATs = [16.513929577340612, 6.278500032470502]< 
+AMAT = 13.368134922441527, 
+access_size = 1024
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.004412565729819431, 0.0006673515770760355)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2690.0,
+ 'Remote-WR': 2690.0,
+ 'cache': 164}, 
+AMATs = [15.755576663768293, 5.567775564365009]< 
+AMAT = 12.624420310907619, 
+access_size = 1024
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0040504404937258, 0.00011711886247683635)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 6260.0,
+ 'Remote-WR': 6260.0,
+ 'cache': 130}, 
+AMATs = [28.92709332833291, 4.211073268018557]< 
+AMAT = 21.33078059370188, 
+access_size = 32768
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0040504404937258, 0.00011711886247683635)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 6260.0,
+ 'Remote-WR': 6260.0,
+ 'cache': 82}, 
+AMATs = [28.48317942770521, 3.7950394330299764]< 
+AMAT = 20.895435455243007, 
+access_size = 32768
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0040504404937258, 0.00011711886247683635)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 6260.0,
+ 'Remote-WR': 6260.0,
+ 'cache': 410}, 
+AMATs = [31.516591081994484, 6.637937305451948]< 
+AMAT = 23.870293901378634, 
+access_size = 32768
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0040504404937258, 0.00011711886247683635)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 6260.0,
+ 'Remote-WR': 6260.0,
+ 'cache': 328}, 
+AMATs = [30.758238168422167, 5.927212837346455]< 
+AMAT = 23.12657928984473, 
+access_size = 32768
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0040504404937258, 0.00011711886247683635)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 6260.0,
+ 'Remote-WR': 6260.0,
+ 'cache': 246}, 
+AMATs = [29.999885254849847, 5.216488369240962]< 
+AMAT = 22.382864678310824, 
+access_size = 32768
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0040504404937258, 0.00011711886247683635)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 6260.0,
+ 'Remote-WR': 6260.0,
+ 'cache': 164}, 
+AMATs = [29.24153234127753, 4.505763901135469]< 
+AMAT = 21.63915006677692, 
+access_size = 32768
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.007431523340364662, 0.006912332229735545)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2420.0,
+ 'Remote-WR': 2420.0,
+ 'cache': 130}, 
+AMATs = [21.555622321291885, 20.20575318487358]< 
+AMAT = 21.140748563865046, 
+access_size = 64
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.007431523340364662, 0.006912332229735545)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2420.0,
+ 'Remote-WR': 2420.0,
+ 'cache': 82}, 
+AMATs = [21.111708420664186, 19.789719349884997]< 
+AMAT = 20.705403425406175, 
+access_size = 64
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.007431523340364662, 0.006912332229735545)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2420.0,
+ 'Remote-WR': 2420.0,
+ 'cache': 410}, 
+AMATs = [24.14512007495346, 22.63261722230697]< 
+AMAT = 23.6802618715418, 
+access_size = 64
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.007431523340364662, 0.006912332229735545)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2420.0,
+ 'Remote-WR': 2420.0,
+ 'cache': 328}, 
+AMATs = [23.386767161381144, 21.92189275420148]< 
+AMAT = 22.9365472600079, 
+access_size = 64
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.007431523340364662, 0.006912332229735545)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2420.0,
+ 'Remote-WR': 2420.0,
+ 'cache': 246}, 
+AMATs = [22.628414247808823, 21.211168286095983]< 
+AMAT = 22.19283264847399, 
+access_size = 64
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.007431523340364662, 0.006912332229735545)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2420.0,
+ 'Remote-WR': 2420.0,
+ 'cache': 164}, 
+AMATs = [21.870061334236507, 20.500443817990494]< 
+AMAT = 21.449118036940085, 
+access_size = 64
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0046548767580416, 0.001224704340550487)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2600.0,
+ 'Remote-WR': 2600.0,
+ 'cache': 130}, 
+AMATs = [15.674015408517564, 6.662140474344827]< 
+AMAT = 12.904272538981806, 
+access_size = 512
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0046548767580416, 0.001224704340550487)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2600.0,
+ 'Remote-WR': 2600.0,
+ 'cache': 82}, 
+AMATs = [15.230101507889865, 6.246106639356247]< 
+AMAT = 12.468927400522931, 
+access_size = 512
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0046548767580416, 0.001224704340550487)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2600.0,
+ 'Remote-WR': 2600.0,
+ 'cache': 410}, 
+AMATs = [18.263513162179137, 9.089004511778219]< 
+AMAT = 15.443785846658557, 
+access_size = 512
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0046548767580416, 0.001224704340550487)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2600.0,
+ 'Remote-WR': 2600.0,
+ 'cache': 328}, 
+AMATs = [17.50516024860682, 8.378280043672726]< 
+AMAT = 14.70007123512465, 
+access_size = 512
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0046548767580416, 0.001224704340550487)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2600.0,
+ 'Remote-WR': 2600.0,
+ 'cache': 246}, 
+AMATs = [16.7468073350345, 7.667555575567233]< 
+AMAT = 13.956356623590743, 
+access_size = 512
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0046548767580416, 0.001224704340550487)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2600.0,
+ 'Remote-WR': 2600.0,
+ 'cache': 164}, 
+AMATs = [15.988454421462183, 6.95683110746174]< 
+AMAT = 13.212642012056836, 
+access_size = 512
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.005294041445609626, 0.002287796194713416)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2540.0,
+ 'Remote-WR': 2540.0,
+ 'cache': 130}, 
+AMATs = [17.018201109457856, 9.288911523485638]< 
+AMAT = 14.642652749799138, 
+access_size = 256
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.005294041445609626, 0.002287796194713416)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2540.0,
+ 'Remote-WR': 2540.0,
+ 'cache': 82}, 
+AMATs = [16.574287208830157, 8.872877688497056]< 
+AMAT = 14.207307611340266, 
+access_size = 256
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.005294041445609626, 0.002287796194713416)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2540.0,
+ 'Remote-WR': 2540.0,
+ 'cache': 410}, 
+AMATs = [19.60769886311943, 11.715775560919027]< 
+AMAT = 17.182166057475893, 
+access_size = 256
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.005294041445609626, 0.002287796194713416)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2540.0,
+ 'Remote-WR': 2540.0,
+ 'cache': 328}, 
+AMATs = [18.84934594954711, 11.005051092813535]< 
+AMAT = 16.438451445941986, 
+access_size = 256
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.005294041445609626, 0.002287796194713416)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2540.0,
+ 'Remote-WR': 2540.0,
+ 'cache': 246}, 
+AMATs = [18.090993035974794, 10.294326624708042]< 
+AMAT = 15.69473683440808, 
+access_size = 256
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.005294041445609626, 0.002287796194713416)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 2540.0,
+ 'Remote-WR': 2540.0,
+ 'cache': 164}, 
+AMATs = [17.332640122402474, 9.583602156602549]< 
+AMAT = 14.951022222874172, 
+access_size = 256
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
@@ -2293,474 +2095,6 @@ access_size = 512
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.0993982194448793e-07, 2.9921497164584363e-06)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 130}, 
-AMATs = [3.5720240608947775, 3.4966400461385914]< 
-AMAT = 3.5488552598546983, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.0993982194448793e-07, 2.9921497164584363e-06)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 82}, 
-AMATs = [3.128110160267079, 3.0806062111500103]< 
-AMAT = 3.113510121395826, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.0993982194448793e-07, 2.9921497164584363e-06)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 410}, 
-AMATs = [6.161521814556352, 5.9235040835719825]< 
-AMAT = 6.088368567531452, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.0993982194448793e-07, 2.9921497164584363e-06)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 328}, 
-AMATs = [5.403168900984034, 5.21277961546649]< 
-AMAT = 5.344653955997546, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.0993982194448793e-07, 2.9921497164584363e-06)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 246}, 
-AMATs = [4.644815987411715, 4.502055147360997]< 
-AMAT = 4.600939344463639, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.0993982194448793e-07, 2.9921497164584363e-06)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
- 'cache': 164}, 
-AMATs = [3.8864630738393973, 3.7913306792555033]< 
-AMAT = 3.857224732929733, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.5754136112032715e-05, 0.00016337502665512903)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 130}, 
-AMATs = [3.6137144637507728, 3.9173880106158587]< 
-AMAT = 3.707046611304973, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.5754136112032715e-05, 0.00016337502665512903)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 82}, 
-AMATs = [3.1698005631230743, 3.5013541756272777]< 
-AMAT = 3.2717014728461007, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.5754136112032715e-05, 0.00016337502665512903)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 410}, 
-AMATs = [6.203212217412347, 6.344252048049249]< 
-AMAT = 6.246559918981727, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.5754136112032715e-05, 0.00016337502665512903)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 328}, 
-AMATs = [5.44485930384003, 5.633527579943756]< 
-AMAT = 5.50284530744782, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.5754136112032715e-05, 0.00016337502665512903)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 246}, 
-AMATs = [4.686506390267711, 4.922803111838263]< 
-AMAT = 4.759130695913914, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (1.5754136112032715e-05, 0.00016337502665512903)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 164}, 
-AMATs = [3.9281534766953925, 4.21207864373277]< 
-AMAT = 4.015416084380007, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 130}, 
-AMATs = [3.5781469418409624, 3.5429703906372976]< 
-AMAT = 3.5673356508961938, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 82}, 
-AMATs = [3.134233041213264, 3.1269365556487165]< 
-AMAT = 3.1319905124373215, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 410}, 
-AMATs = [6.167644695502537, 5.969834428070689]< 
-AMAT = 6.106848958572948, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 328}, 
-AMATs = [5.409291781930219, 5.259109959965196]< 
-AMAT = 5.363134347039042, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 246}, 
-AMATs = [4.6509388683579, 4.548385491859703]< 
-AMAT = 4.619419735505135, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 3110.0,
- 'Remote-WR': 3110.0,
- 'cache': 164}, 
-AMATs = [3.892585954785582, 3.8376610237542095]< 
-AMAT = 3.875705123971228, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (4.154621563367436e-05, 0.0003188488782442435)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 130}, 
-AMATs = [3.6768632253189377, 4.28778533965394]< 
-AMAT = 3.864626280441319, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (4.154621563367436e-05, 0.0003188488782442435)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 82}, 
-AMATs = [3.2329493246912393, 3.871751504665359]< 
-AMAT = 3.429281141982447, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (4.154621563367436e-05, 0.0003188488782442435)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 410}, 
-AMATs = [6.266360978980512, 6.714649377087331]< 
-AMAT = 6.404139588118073, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (4.154621563367436e-05, 0.0003188488782442435)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 328}, 
-AMATs = [5.508008065408195, 6.003924908981838]< 
-AMAT = 5.660424976584167, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (4.154621563367436e-05, 0.0003188488782442435)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 246}, 
-AMATs = [4.749655151835876, 5.293200440876345]< 
-AMAT = 4.916710365050261, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (4.154621563367436e-05, 0.0003188488782442435)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
- 'cache': 164}, 
-AMATs = [3.9913022382635575, 4.582475972770852]< 
-AMAT = 4.1729957535163535, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1102884130780265e-05, 0.00015827741008940353)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 130}, 
-AMATs = [3.6262033363494335, 3.8894304551460106]< 
-AMAT = 3.7071045295729044, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1102884130780265e-05, 0.00015827741008940353)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 82}, 
-AMATs = [3.182289435721735, 3.4733966201574296]< 
-AMAT = 3.271759391114032, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1102884130780265e-05, 0.00015827741008940353)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 410}, 
-AMATs = [6.215701090011008, 6.316294492579401]< 
-AMAT = 6.246617837249658, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1102884130780265e-05, 0.00015827741008940353)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 328}, 
-AMATs = [5.45734817643869, 5.605570024473908]< 
-AMAT = 5.502903225715753, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1102884130780265e-05, 0.00015827741008940353)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 246}, 
-AMATs = [4.698995262866371, 4.8948455563684155]< 
-AMAT = 4.759188614181845, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1102884130780265e-05, 0.00015827741008940353)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 164}, 
-AMATs = [3.940642349294053, 4.1841210882629225]< 
-AMAT = 4.015474002647938, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0002403388870959126, 0.0019803247545982484)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 130}, 
-AMATs = [4.152955944381514, 8.270295095041323]< 
-AMAT = 5.418394139795983, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0002403388870959126, 0.0019803247545982484)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 82}, 
-AMATs = [3.709042043753815, 7.854261260052741]< 
-AMAT = 4.983049001337109, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0002403388870959126, 0.0019803247545982484)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 410}, 
-AMATs = [6.742453698043088, 10.697159132474713]< 
-AMAT = 7.957907447472736, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0002403388870959126, 0.0019803247545982484)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 328}, 
-AMATs = [5.98410078447077, 9.98643466436922]< 
-AMAT = 7.214192835938831, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0002403388870959126, 0.0019803247545982484)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 246}, 
-AMATs = [5.225747870898451, 9.275710196263727]< 
-AMAT = 6.470478224404923, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0002403388870959126, 0.0019803247545982484)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 164}, 
-AMATs = [4.467394957326134, 8.564985728158234]< 
-AMAT = 5.726763612871017, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
  'cache': (2.6963156567800695e-05, 0.0002133696937019114)}, 
 Latency = {'L1': 2,
  'L2': 9,
@@ -3307,237 +2641,81 @@ access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0031151987140025194, 0.0011354316675625802)}, 
+ 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 130}, 
-AMATs = [11.483940571175804, 6.361905624522516]< 
-AMAT = 9.909715465453315, 
-access_size = 256
+AMATs = [3.5781469418409624, 3.5429703906372976]< 
+AMAT = 3.5673356508961938, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0031151987140025194, 0.0011354316675625802)}, 
+ 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 82}, 
-AMATs = [11.040026670548105, 5.945871789533934]< 
-AMAT = 9.47437032699444, 
-access_size = 256
+AMATs = [3.134233041213264, 3.1269365556487165]< 
+AMAT = 3.1319905124373215, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0031151987140025194, 0.0011354316675625802)}, 
+ 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 410}, 
-AMATs = [14.07343832483738, 8.788769661955905]< 
-AMAT = 12.44922877313007, 
-access_size = 256
+AMATs = [6.167644695502537, 5.969834428070689]< 
+AMAT = 6.106848958572948, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0031151987140025194, 0.0011354316675625802)}, 
+ 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 328}, 
-AMATs = [13.315085411265061, 8.078045193850413]< 
-AMAT = 11.705514161596163, 
-access_size = 256
+AMATs = [5.409291781930219, 5.259109959965196]< 
+AMAT = 5.363134347039042, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0031151987140025194, 0.0011354316675625802)}, 
+ 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 246}, 
-AMATs = [12.556732497692742, 7.36732072574492]< 
-AMAT = 10.961799550062256, 
-access_size = 256
+AMATs = [4.6509388683579, 4.548385491859703]< 
+AMAT = 4.619419735505135, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0031151987140025194, 0.0011354316675625802)}, 
+ 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 2540.0,
- 'Remote-WR': 2540.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 164}, 
-AMATs = [11.798379584120424, 6.656596257639427]< 
-AMAT = 10.218084938528348, 
-access_size = 256
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002789157759411835, 0.0005780209277327018)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 130}, 
-AMATs = [10.823146012080176, 4.9807636010185865]< 
-AMAT = 9.027526660686632, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002789157759411835, 0.0005780209277327018)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 82}, 
-AMATs = [10.379232111452477, 4.5647297660300055]< 
-AMAT = 8.59218152222776, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002789157759411835, 0.0005780209277327018)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 410}, 
-AMATs = [13.41264376574175, 7.407627638451977]< 
-AMAT = 11.567039968363385, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002789157759411835, 0.0005780209277327018)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 328}, 
-AMATs = [12.654290852169432, 6.696903170346484]< 
-AMAT = 10.823325356829478, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002789157759411835, 0.0005780209277327018)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 246}, 
-AMATs = [11.895937938597115, 5.986178702240991]< 
-AMAT = 10.079610745295572, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.002789157759411835, 0.0005780209277327018)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2600.0,
- 'Remote-WR': 2600.0,
- 'cache': 164}, 
-AMATs = [11.137585025024796, 5.275454234135498]< 
-AMAT = 9.335896133761667, 
-access_size = 512
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.005120917529996938, 0.004407122906430572)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 130}, 
-AMATs = [15.963956260201995, 14.143146622475548]< 
-AMAT = 15.404341912720177, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.005120917529996938, 0.004407122906430572)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 82}, 
-AMATs = [15.520042359574296, 13.727112787486966]< 
-AMAT = 14.968996774261306, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.005120917529996938, 0.004407122906430572)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 410}, 
-AMATs = [18.55345401386357, 16.570010659908938]< 
-AMAT = 17.943855220396934, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.005120917529996938, 0.004407122906430572)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 328}, 
-AMATs = [17.79510110029125, 15.859286191803445]< 
-AMAT = 17.200140608863027, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.005120917529996938, 0.004407122906430572)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 246}, 
-AMATs = [17.03674818671893, 15.148561723697952]< 
-AMAT = 16.456425997329116, 
-access_size = 64
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.005120917529996938, 0.004407122906430572)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2420.0,
- 'Remote-WR': 2420.0,
- 'cache': 164}, 
-AMATs = [16.278395273146614, 14.43783725559246]< 
-AMAT = 15.712711385795213, 
-access_size = 64
+AMATs = [3.892585954785582, 3.8376610237542095]< 
+AMAT = 3.875705123971228, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
@@ -3619,159 +2797,81 @@ access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0028597127995386366, 6.359906719307222e-05)}, 
+ 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 130}, 
-AMATs = [21.473137962721268, 3.876039349542194]< 
-AMAT = 16.06478079349869, 
-access_size = 32768
+AMATs = [8.862183537093612, 3.748877065350926]< 
+AMAT = 7.290641073032503, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0028597127995386366, 6.359906719307222e-05)}, 
+ 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 82}, 
-AMATs = [21.02922406209357, 3.460005514553613]< 
-AMAT = 15.629435655039819, 
-access_size = 32768
+AMATs = [8.418269636465915, 3.3328432303623448]< 
+AMAT = 6.855295934573632, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0028597127995386366, 6.359906719307222e-05)}, 
+ 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 410}, 
-AMATs = [24.062635716382843, 6.302903386975585]< 
-AMAT = 18.604294101175444, 
-access_size = 32768
+AMATs = [11.451681290755186, 6.1757411027843165]< 
+AMAT = 9.830154380709258, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0028597127995386366, 6.359906719307222e-05)}, 
+ 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 328}, 
-AMATs = [23.304282802810526, 5.592178918870092]< 
-AMAT = 17.860579489641538, 
-access_size = 32768
+AMATs = [10.693328377182869, 5.465016634678824]< 
+AMAT = 9.086439769175351, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0028597127995386366, 6.359906719307222e-05)}, 
+ 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 246}, 
-AMATs = [22.545929889238206, 4.881454450764599]< 
-AMAT = 17.11686487810763, 
-access_size = 32768
+AMATs = [9.93497546361055, 4.754292166573331]< 
+AMAT = 8.342725157641445, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0028597127995386366, 6.359906719307222e-05)}, 
+ 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
  'L3': 26,
- 'Remote-RD': 6260.0,
- 'Remote-WR': 6260.0,
+ 'Remote-RD': 3110.0,
+ 'Remote-WR': 3110.0,
  'cache': 164}, 
-AMATs = [21.78757697566589, 4.170729982659106]< 
-AMAT = 16.373150266573727, 
-access_size = 32768
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.00012829954496051257, 0.0005325314278315875)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 130}, 
-AMATs = [3.916461613553184, 4.910418729780532]< 
-AMAT = 4.221948058427792, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.00012829954496051257, 0.0005325314278315875)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 82}, 
-AMATs = [3.4725477129254854, 4.494384894791951]< 
-AMAT = 3.7866029199689204, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.00012829954496051257, 0.0005325314278315875)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 410}, 
-AMATs = [6.505959367214758, 7.337282767213923]< 
-AMAT = 6.7614613661045455, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.00012829954496051257, 0.0005325314278315875)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 328}, 
-AMATs = [5.74760645364244, 6.62655829910843]< 
-AMAT = 6.0177467545706405, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.00012829954496051257, 0.0005325314278315875)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 246}, 
-AMATs = [4.989253540070122, 5.915833831002937]< 
-AMAT = 5.274032143036734, 
-access_size = 1024
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.00012829954496051257, 0.0005325314278315875)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 2690.0,
- 'Remote-WR': 2690.0,
- 'cache': 164}, 
-AMATs = [4.230900626497803, 5.205109362897444]< 
-AMAT = 4.530317531502826, 
-access_size = 1024
+AMATs = [9.176622550038232, 4.043567698467838]< 
+AMAT = 7.599010546107539, 
+access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
@@ -3931,45 +3031,6 @@ access_size = 64
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 40000,
- 'Remote-WR': 40000,
- 'cache': 82}, 
-AMATs = [71.17691003324161, 6.546992735756028]< 
-AMAT = 51.31331295705459, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 10000,
- 'Remote-WR': 10000,
- 'cache': 82}, 
-AMATs = [20.139793961046685, 3.9331546993827424]< 
-AMAT = 15.158785695617109, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 10000,
- 'Remote-WR': 10000,
- 'cache': 82}, 
-AMATs = [20.139793961046685, 3.9331546993827424]< 
-AMAT = 15.158785695617109, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
  'cache': (0.004098909025242574, 0.00023717967341599914)}, 
 Latency = {'L1': 2,
  'L2': 9,
@@ -4087,45 +3148,6 @@ access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 40000,
- 'Remote-WR': 40000,
- 'cache': 82}, 
-AMATs = [3.215024563754153, 3.8986753760952197]< 
-AMAT = 3.4251403250763355, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 10000,
- 'Remote-WR': 10000,
- 'cache': 82}, 
-AMATs = [3.149322593674818, 3.2710753594675404]< 
-AMAT = 3.1867425376225427, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
- 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
-Latency = {'L1': 2,
- 'L2': 9,
- 'L3': 26,
- 'Remote-RD': 10000,
- 'Remote-WR': 10000,
- 'cache': 82}, 
-AMATs = [3.149322593674818, 3.2710753594675404]< 
-AMAT = 3.1867425376225427, 
-access_size = 4096
-[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
- 'L2': (0.010477585696171455, 0.01000191182028712),
- 'L3': (0.009248206263077053, 0.008667371562262109),
  'cache': (3.190112918002006e-06, 3.2300557037418686e-05)}, 
 Latency = {'L1': 2,
  'L2': 9,
@@ -4204,6 +3226,45 @@ access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 40000,
+ 'Remote-WR': 40000,
+ 'cache': 82}, 
+AMATs = [3.215024563754153, 3.8986753760952197]< 
+AMAT = 3.4251403250763355, 
+access_size = 4096
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 10000,
+ 'Remote-WR': 10000,
+ 'cache': 82}, 
+AMATs = [3.149322593674818, 3.2710753594675404]< 
+AMAT = 3.1867425376225427, 
+access_size = 4096
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (2.1900656693111595e-06, 2.0920000554255985e-05)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 10000,
+ 'Remote-WR': 10000,
+ 'cache': 82}, 
+AMATs = [3.149322593674818, 3.2710753594675404]< 
+AMAT = 3.1867425376225427, 
+access_size = 4096
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
  'cache': (0.0024764469135009513, 0.00014776061250920274)}, 
 Latency = {'L1': 2,
  'L2': 9,
@@ -4239,6 +3300,45 @@ Latency = {'L1': 2,
  'cache': 82}, 
 AMATs = [27.891891071991218, 4.539481479017008]< 
 AMAT = 20.714675406097577, 
+access_size = 4096
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 40000,
+ 'Remote-WR': 40000,
+ 'cache': 82}, 
+AMATs = [71.17691003324161, 6.546992735756028]< 
+AMAT = 51.31331295705459, 
+access_size = 4096
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 10000,
+ 'Remote-WR': 10000,
+ 'cache': 82}, 
+AMATs = [20.139793961046685, 3.9331546993827424]< 
+AMAT = 15.158785695617109, 
+access_size = 4096
+[DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
+ 'L2': (0.010477585696171455, 0.01000191182028712),
+ 'L3': (0.009248206263077053, 0.008667371562262109),
+ 'cache': (0.0017012372024064978, 8.71279345457762e-05)}, 
+Latency = {'L1': 2,
+ 'L2': 9,
+ 'L3': 26,
+ 'Remote-RD': 10000,
+ 'Remote-WR': 10000,
+ 'cache': 82}, 
+AMATs = [20.139793961046685, 3.9331546993827424]< 
+AMAT = 15.158785695617109, 
 access_size = 4096
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
@@ -4279,7 +3379,7 @@ Latency = {'L1': 2,
 AMATs = [41.735385978119965, 5.362641605468664]< 
 AMAT = 30.556452614366417, 
 access_size = 4096
-[INFO ]  redis-method-rand - pberry=7.290641073032503, pberry_main=6.855295934573632, diff=0.4353451384588709, numa=6.35049372942858
+[INFO ]  redis-method-rand - pberry=4.365412017337671, pberry_main=3.9300668788788, diff=0.4353451384588709, numa=11.07729593098094
 [DEBUG]  Miss Rates = {'L1': (0.010739088367658873, 0.010122353165780303),
  'L2': (0.010477585696171455, 0.01000191182028712),
  'L3': (0.009248206263077053, 0.008667371562262109),
@@ -6957,21 +6057,16 @@ access_size = 4096
                                                                                   108.78337441592178: 3.2286468499256302,
                                                                                   217.56674883184357: 3.1867425376225427}}},
                                                          'pberry': {'cache': {4: {0: {'blocks': {64: 21.38196460126084}},
-                                                                                  0.42493505631219447: {'blocks': {4096: 12.599037808139217}},
+                                                                                  0.42493505631219447: {'blocks': {64: 21.140748563865046,
+                                                                                                                   256: 14.642652749799138,
+                                                                                                                   512: 12.904272538981806,
+                                                                                                                   1024: 12.316050837832584,
+                                                                                                                   4096: 12.599037808139217,
+                                                                                                                   32768: 21.33078059370188}},
                                                                                   0.8498701126243889: {'blocks': {4096: 12.079315484763537}},
                                                                                   1.6997402252487779: {'blocks': {4096: 11.429834262199165}},
-                                                                                  6.7989609009951115: {'blocks': {64: 15.404341912720177,
-                                                                                                                  256: 9.909715465453315,
-                                                                                                                  512: 9.027526660686632,
-                                                                                                                  1024: 4.221948058427792,
-                                                                                                                  4096: 9.018522772991929,
-                                                                                                                  32768: 16.06478079349869}},
-                                                                                  13.597921801990223: {'blocks': {64: 141.3194611132795,
-                                                                                                                  256: 5.56723071150457,
-                                                                                                                  512: 7.7621283928756615,
-                                                                                                                  1024: 7.186916985183053,
-                                                                                                                  4096: 7.290641073032503,
-                                                                                                                  32768: 13.103896327005684}},
+                                                                                  6.7989609009951115: {'blocks': {4096: 9.018522772991929}},
+                                                                                  13.597921801990223: {'blocks': {4096: 7.290641073032503}},
                                                                                   27.195843603980446: {'blocks': {64: 11.060219576809978,
                                                                                                                   256: 6.765399898510596,
                                                                                                                   512: 5.362199031108543,
@@ -6990,28 +6085,18 @@ access_size = 4096
                                                                                                                   1024: 3.6379675773680917,
                                                                                                                   4096: 3.5803678920224544,
                                                                                                                   32768: 3.55091675711345}},
-                                                                                  217.56674883184357: {'blocks': {64: 5.418394139795983,
-                                                                                                                  256: 3.864626280441319,
-                                                                                                                  512: 3.7071045295729044,
-                                                                                                                  1024: 3.707046611304973,
-                                                                                                                  4096: 3.5673356508961938,
-                                                                                                                  32768: 3.5488552598546983}}}}},
+                                                                                  217.56674883184357: {'blocks': {4096: 3.5673356508961938}}}}},
                                                          'pberry-2x-main': {'cache': {4: {0: {'blocks': {64: 21.38196460126084}},
-                                                                                          0.42493505631219447: {'blocks': {4096: 12.907407281214251}},
+                                                                                          0.42493505631219447: {'blocks': {64: 21.449118036940085,
+                                                                                                                           256: 14.951022222874172,
+                                                                                                                           512: 13.212642012056836,
+                                                                                                                           1024: 12.624420310907619,
+                                                                                                                           4096: 12.907407281214251,
+                                                                                                                           32768: 21.63915006677692}},
                                                                                           0.8498701126243889: {'blocks': {4096: 12.387684957838575}},
                                                                                           1.6997402252487779: {'blocks': {4096: 11.738203735274197}},
-                                                                                          6.7989609009951115: {'blocks': {64: 15.712711385795213,
-                                                                                                                          256: 10.218084938528348,
-                                                                                                                          512: 9.335896133761667,
-                                                                                                                          1024: 4.530317531502826,
-                                                                                                                          4096: 9.326892246066963,
-                                                                                                                          32768: 16.373150266573727}},
-                                                                                          13.597921801990223: {'blocks': {64: 141.62783058635452,
-                                                                                                                          256: 5.875600184579604,
-                                                                                                                          512: 8.070497865950696,
-                                                                                                                          1024: 7.495286458258088,
-                                                                                                                          4096: 7.599010546107539,
-                                                                                                                          32768: 13.412265800080718}},
+                                                                                          6.7989609009951115: {'blocks': {4096: 9.326892246066963}},
+                                                                                          13.597921801990223: {'blocks': {4096: 7.599010546107539}},
                                                                                           27.195843603980446: {'blocks': {64: 11.368589049885012,
                                                                                                                           256: 7.073769371585629,
                                                                                                                           512: 5.670568504183578,
@@ -7030,28 +6115,18 @@ access_size = 4096
                                                                                                                           1024: 3.9463370504431254,
                                                                                                                           4096: 3.8887373650974886,
                                                                                                                           32768: 3.8592862301884847}},
-                                                                                          217.56674883184357: {'blocks': {64: 5.726763612871017,
-                                                                                                                          256: 4.1729957535163535,
-                                                                                                                          512: 4.015474002647938,
-                                                                                                                          1024: 4.015416084380007,
-                                                                                                                          4096: 3.875705123971228,
-                                                                                                                          32768: 3.857224732929733}}}}},
+                                                                                          217.56674883184357: {'blocks': {4096: 3.875705123971228}}}}},
                                                          'pberry-3x-main': {'cache': {4: {0: {'blocks': {64: 21.38196460126084}},
-                                                                                          0.42493505631219447: {'blocks': {4096: 13.651121892748158}},
+                                                                                          0.42493505631219447: {'blocks': {64: 22.19283264847399,
+                                                                                                                           256: 15.69473683440808,
+                                                                                                                           512: 13.956356623590743,
+                                                                                                                           1024: 13.368134922441527,
+                                                                                                                           4096: 13.651121892748158,
+                                                                                                                           32768: 22.382864678310824}},
                                                                                           0.8498701126243889: {'blocks': {4096: 13.131399569372482}},
                                                                                           1.6997402252487779: {'blocks': {4096: 12.481918346808104}},
-                                                                                          6.7989609009951115: {'blocks': {64: 16.456425997329116,
-                                                                                                                          256: 10.961799550062256,
-                                                                                                                          512: 10.079610745295572,
-                                                                                                                          1024: 5.274032143036734,
-                                                                                                                          4096: 10.07060685760087,
-                                                                                                                          32768: 17.11686487810763}},
-                                                                                          13.597921801990223: {'blocks': {64: 142.37154519788842,
-                                                                                                                          256: 6.619314796113511,
-                                                                                                                          512: 8.8142124774846,
-                                                                                                                          1024: 8.239001069791993,
-                                                                                                                          4096: 8.342725157641445,
-                                                                                                                          32768: 14.155980411614625}},
+                                                                                          6.7989609009951115: {'blocks': {4096: 10.07060685760087}},
+                                                                                          13.597921801990223: {'blocks': {4096: 8.342725157641445}},
                                                                                           27.195843603980446: {'blocks': {64: 12.112303661418919,
                                                                                                                           256: 7.817483983119537,
                                                                                                                           512: 6.414283115717484,
@@ -7070,28 +6145,18 @@ access_size = 4096
                                                                                                                           1024: 4.690051661977032,
                                                                                                                           4096: 4.632451976631395,
                                                                                                                           32768: 4.603000841722391}},
-                                                                                          217.56674883184357: {'blocks': {64: 6.470478224404923,
-                                                                                                                          256: 4.916710365050261,
-                                                                                                                          512: 4.759188614181845,
-                                                                                                                          1024: 4.759130695913914,
-                                                                                                                          4096: 4.619419735505135,
-                                                                                                                          32768: 4.600939344463639}}}}},
+                                                                                          217.56674883184357: {'blocks': {4096: 4.619419735505135}}}}},
                                                          'pberry-4x-main': {'cache': {4: {0: {'blocks': {64: 21.38196460126084}},
-                                                                                          0.42493505631219447: {'blocks': {4096: 14.394836504282065}},
+                                                                                          0.42493505631219447: {'blocks': {64: 22.9365472600079,
+                                                                                                                           256: 16.438451445941986,
+                                                                                                                           512: 14.70007123512465,
+                                                                                                                           1024: 14.111849533975432,
+                                                                                                                           4096: 14.394836504282065,
+                                                                                                                           32768: 23.12657928984473}},
                                                                                           0.8498701126243889: {'blocks': {4096: 13.875114180906387}},
                                                                                           1.6997402252487779: {'blocks': {4096: 13.225632958342011}},
-                                                                                          6.7989609009951115: {'blocks': {64: 17.200140608863027,
-                                                                                                                          256: 11.705514161596163,
-                                                                                                                          512: 10.823325356829478,
-                                                                                                                          1024: 6.0177467545706405,
-                                                                                                                          4096: 10.814321469134777,
-                                                                                                                          32768: 17.860579489641538}},
-                                                                                          13.597921801990223: {'blocks': {64: 143.11525980942233,
-                                                                                                                          256: 7.363029407647417,
-                                                                                                                          512: 9.55792708901851,
-                                                                                                                          1024: 8.982715681325901,
-                                                                                                                          4096: 9.086439769175351,
-                                                                                                                          32768: 14.899695023148531}},
+                                                                                          6.7989609009951115: {'blocks': {4096: 10.814321469134777}},
+                                                                                          13.597921801990223: {'blocks': {4096: 9.086439769175351}},
                                                                                           27.195843603980446: {'blocks': {64: 12.856018272952825,
                                                                                                                           256: 8.561198594653444,
                                                                                                                           512: 7.157997727251391,
@@ -7110,28 +6175,18 @@ access_size = 4096
                                                                                                                           1024: 5.4337662735109395,
                                                                                                                           4096: 5.376166588165302,
                                                                                                                           32768: 5.346715453256297}},
-                                                                                          217.56674883184357: {'blocks': {64: 7.214192835938831,
-                                                                                                                          256: 5.660424976584167,
-                                                                                                                          512: 5.502903225715753,
-                                                                                                                          1024: 5.50284530744782,
-                                                                                                                          4096: 5.363134347039042,
-                                                                                                                          32768: 5.344653955997546}}}}},
+                                                                                          217.56674883184357: {'blocks': {4096: 5.363134347039042}}}}},
                                                          'pberry-5x-main': {'cache': {4: {0: {'blocks': {64: 21.38196460126084}},
-                                                                                          0.42493505631219447: {'blocks': {4096: 15.138551115815973}},
+                                                                                          0.42493505631219447: {'blocks': {64: 23.6802618715418,
+                                                                                                                           256: 17.182166057475893,
+                                                                                                                           512: 15.443785846658557,
+                                                                                                                           1024: 14.855564145509339,
+                                                                                                                           4096: 15.138551115815973,
+                                                                                                                           32768: 23.870293901378634}},
                                                                                           0.8498701126243889: {'blocks': {4096: 14.618828792440294}},
                                                                                           1.6997402252487779: {'blocks': {4096: 13.969347569875918}},
-                                                                                          6.7989609009951115: {'blocks': {64: 17.943855220396934,
-                                                                                                                          256: 12.44922877313007,
-                                                                                                                          512: 11.567039968363385,
-                                                                                                                          1024: 6.7614613661045455,
-                                                                                                                          4096: 11.558036080668682,
-                                                                                                                          32768: 18.604294101175444}},
-                                                                                          13.597921801990223: {'blocks': {64: 143.85897442095623,
-                                                                                                                          256: 8.106744019181322,
-                                                                                                                          512: 10.301641700552416,
-                                                                                                                          1024: 9.726430292859808,
-                                                                                                                          4096: 9.830154380709258,
-                                                                                                                          32768: 15.643409634682438}},
+                                                                                          6.7989609009951115: {'blocks': {4096: 11.558036080668682}},
+                                                                                          13.597921801990223: {'blocks': {4096: 9.830154380709258}},
                                                                                           27.195843603980446: {'blocks': {64: 13.599732884486732,
                                                                                                                           256: 9.304913206187349,
                                                                                                                           512: 7.901712338785297,
@@ -7150,28 +6205,18 @@ access_size = 4096
                                                                                                                           1024: 6.177480885044845,
                                                                                                                           4096: 6.119881199699207,
                                                                                                                           32768: 6.090430064790204}},
-                                                                                          217.56674883184357: {'blocks': {64: 7.957907447472736,
-                                                                                                                          256: 6.404139588118073,
-                                                                                                                          512: 6.246617837249658,
-                                                                                                                          1024: 6.246559918981727,
-                                                                                                                          4096: 6.106848958572948,
-                                                                                                                          32768: 6.088368567531452}}}}},
+                                                                                          217.56674883184357: {'blocks': {4096: 6.106848958572948}}}}},
                                                          'pberry-main': {'cache': {4: {0: {'blocks': {64: 21.38196460126084}},
-                                                                                       0.42493505631219447: {'blocks': {4096: 12.163692669680344}},
+                                                                                       0.42493505631219447: {'blocks': {64: 20.705403425406175,
+                                                                                                                        256: 14.207307611340266,
+                                                                                                                        512: 12.468927400522931,
+                                                                                                                        1024: 11.880705699373713,
+                                                                                                                        4096: 12.163692669680344,
+                                                                                                                        32768: 20.895435455243007}},
                                                                                        0.8498701126243889: {'blocks': {4096: 11.643970346304668}},
                                                                                        1.6997402252487779: {'blocks': {4096: 10.99448912374029}},
-                                                                                       6.7989609009951115: {'blocks': {64: 14.968996774261306,
-                                                                                                                       256: 9.47437032699444,
-                                                                                                                       512: 8.59218152222776,
-                                                                                                                       1024: 3.7866029199689204,
-                                                                                                                       4096: 8.583177634533056,
-                                                                                                                       32768: 15.629435655039819}},
-                                                                                       13.597921801990223: {'blocks': {64: 140.88411597482062,
-                                                                                                                       256: 5.131885573045698,
-                                                                                                                       512: 7.32678325441679,
-                                                                                                                       1024: 6.751571846724182,
-                                                                                                                       4096: 6.855295934573632,
-                                                                                                                       32768: 12.66855118854681}},
+                                                                                       6.7989609009951115: {'blocks': {4096: 8.583177634533056}},
+                                                                                       13.597921801990223: {'blocks': {4096: 6.855295934573632}},
                                                                                        27.195843603980446: {'blocks': {64: 10.624874438351105,
                                                                                                                        256: 6.330054760051724,
                                                                                                                        512: 4.926853892649671,
@@ -7190,12 +6235,7 @@ access_size = 4096
                                                                                                                        1024: 3.2026224389092195,
                                                                                                                        4096: 3.145022753563582,
                                                                                                                        32768: 3.115571618654578}},
-                                                                                       217.56674883184357: {'blocks': {64: 4.983049001337109,
-                                                                                                                       256: 3.429281141982447,
-                                                                                                                       512: 3.271759391114032,
-                                                                                                                       1024: 3.2717014728461007,
-                                                                                                                       4096: 3.1319905124373215,
-                                                                                                                       32768: 3.113510121395826}}}}},
+                                                                                       217.56674883184357: {'blocks': {4096: 3.1319905124373215}}}}},
                                                          'regions': {'cache': {4: {0.42493505631219447: 32.227585486957025,
                                                                                    0.8498701126243889: 30.556452614366417,
                                                                                    1.6997402252487779: 28.46808855467389,
@@ -7214,36 +6254,26 @@ access_size = 4096
                                                                      0.008667371562262109),
                                                               'cache': {4: {0: {'blocks': {64: (0.009248206263077053,
                                                                                                 0.008667371562262109)}},
-                                                                            0.42493505631219447: {'blocks': {4096: (0.004098909025242574,
-                                                                                                                    0.00023717967341599914)}},
+                                                                            0.42493505631219447: {'blocks': {64: (0.007431523340364662,
+                                                                                                                  0.006912332229735545),
+                                                                                                             256: (0.005294041445609626,
+                                                                                                                   0.002287796194713416),
+                                                                                                             512: (0.0046548767580416,
+                                                                                                                   0.001224704340550487),
+                                                                                                             1024: (0.004412565729819431,
+                                                                                                                    0.0006673515770760355),
+                                                                                                             4096: (0.004098909025242574,
+                                                                                                                    0.00023717967341599914),
+                                                                                                             32768: (0.0040504404937258,
+                                                                                                                     0.00011711886247683635)}},
                                                                             0.8498701126243889: {'blocks': {4096: (0.0038607964041138263,
                                                                                                                    0.00023007662515436828)}},
                                                                             1.6997402252487779: {'blocks': {4096: (0.0035621977691761755,
                                                                                                                    0.00022353614123611634)}},
-                                                                            6.7989609009951115: {'blocks': {64: (0.005120917529996938,
-                                                                                                                 0.004407122906430572),
-                                                                                                            256: (0.0031151987140025194,
-                                                                                                                  0.0011354316675625802),
-                                                                                                            512: (0.002789157759411835,
-                                                                                                                  0.0005780209277327018),
-                                                                                                            1024: (0.00012829954496051257,
-                                                                                                                   0.0005325314278315875),
-                                                                                                            4096: (0.0024764469135009513,
-                                                                                                                   0.00014776061250920274),
-                                                                                                            32768: (0.0028597127995386366,
-                                                                                                                    6.359906719307222e-05)}},
-                                                                            13.597921801990223: {'blocks': {64: (0.032511210762331835,
-                                                                                                                 0.11197068403908794),
-                                                                                                            256: (0.0003978670090247125,
-                                                                                                                  0.0016968139252134544),
-                                                                                                            512: (0.002103905016819205,
-                                                                                                                  0.0005388237557955962),
-                                                                                                            1024: (0.0018322478970160586,
-                                                                                                                   0.0002786408994318882),
-                                                                                                            4096: (0.0017012372024064978,
-                                                                                                                   8.71279345457762e-05),
-                                                                                                            32768: (0.0011210762331838565,
-                                                                                                                    0.0024429967426710096)}},
+                                                                            6.7989609009951115: {'blocks': {4096: (0.0024764469135009513,
+                                                                                                                   0.00014776061250920274)}},
+                                                                            13.597921801990223: {'blocks': {4096: (0.0017012372024064978,
+                                                                                                                   8.71279345457762e-05)}},
                                                                             27.195843603980446: {'blocks': {64: (0.0028759648239517458,
                                                                                                                  0.0036258763074299223),
                                                                                                             256: (0.0014239079575880393,
@@ -7280,30 +6310,20 @@ access_size = 4096
                                                                                                                    3.2300557037418686e-05),
                                                                                                             32768: (1.5043044228480145e-07,
                                                                                                                     3.972376706759286e-06)}},
-                                                                            217.56674883184357: {'blocks': {64: (0.0002403388870959126,
-                                                                                                                 0.0019803247545982484),
-                                                                                                            256: (4.154621563367436e-05,
-                                                                                                                  0.0003188488782442435),
-                                                                                                            512: (2.1102884130780265e-05,
-                                                                                                                  0.00015827741008940353),
-                                                                                                            1024: (1.5754136112032715e-05,
-                                                                                                                   0.00016337502665512903),
-                                                                                                            4096: (2.1900656693111595e-06,
-                                                                                                                   2.0920000554255985e-05),
-                                                                                                            32768: (1.0993982194448793e-07,
-                                                                                                                    2.9921497164584363e-06)}}}}},
+                                                                            217.56674883184357: {'blocks': {4096: (2.1900656693111595e-06,
+                                                                                                                   2.0920000554255985e-05)}}}}},
                                                'callgrind': {'cache': {}}},
                                 'name': 'Memtier+Redis -R:R',
                                 'num_cores': 4,
-                                'numa_overhead': {'cachegrind': 6.35049372942858,
+                                'numa_overhead': {'cachegrind': 11.07729593098094,
                                                   'callgrind': 0},
                                 'peak_mem': 4294967296,
                                 'peak_rss': 3948183552,
                                 'pretty_name': 'Redis - Random',
                                 'raw': {'cachegrind': {'d1_miss_rd': [],
                                                        'd1_miss_wr': [],
-                                                       'num_reads': 50562824630.0,
-                                                       'num_writes': 22501935552.0},
+                                                       'num_reads': 87708853769.0,
+                                                       'num_writes': 36350485761.0},
                                         'callgrind': {'d1_miss_rd': [],
                                                       'd1_miss_wr': []}},
                                 'read_write_ratio': {'cachegrind': 2.2536864823423937,
@@ -7450,239 +6470,251 @@ access_size = 4096
                                                         'callgrind': 0}}},
           'methods_valid': ['graphcol'],
           'process_name': 'XX'}}
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  http://localhost:46479 "POST / HTTP/1.1" 200 29640
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  http://localhost:46479 "POST / HTTP/1.1" 200 9195
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  http://localhost:41551 "POST / HTTP/1.1" 200 31311
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  http://localhost:41551 "POST / HTTP/1.1" 200 48425
+[INFO ]  Plot generated at: /store/KCacheSim/scripts/../plots/amat-pberry-block-sweep-assoc=4
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  http://localhost:41551 "POST / HTTP/1.1" 200 29640
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  http://localhost:41551 "POST / HTTP/1.1" 200 9195
 [INFO ]  Plot generated at: /store/KCacheSim/scripts/../plots/amat-vs-rss-redis
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  http://localhost:46479 "POST / HTTP/1.1" 200 28646
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  http://localhost:46479 "POST / HTTP/1.1" 200 7389
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  http://localhost:41551 "POST / HTTP/1.1" 200 28646
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  http://localhost:41551 "POST / HTTP/1.1" 200 7389
 [INFO ]  Plot generated at: /store/KCacheSim/scripts/../plots/amat-vs-rss-metis
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  http://localhost:46479 "POST / HTTP/1.1" 200 30934
-[DEBUG]  Starting new HTTP connection (1): localhost:46479
-[DEBUG]  http://localhost:46479 "POST / HTTP/1.1" 200 10332
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  http://localhost:41551 "POST / HTTP/1.1" 200 30934
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  http://localhost:41551 "POST / HTTP/1.1" 200 10332
 [INFO ]  Plot generated at: /store/KCacheSim/scripts/../plots/amat-vs-rss-turi
+[DEBUG]  Starting new HTTP connection (1): localhost:41551
+[DEBUG]  http://localhost:41551 "POST / HTTP/1.1" 200 28497
+[INFO ]  Plot generated at: /store/KCacheSim/scripts/../plots/amat-pberry-block-sweep

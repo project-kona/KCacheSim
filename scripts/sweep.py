@@ -11,7 +11,7 @@ cur_dir = os.path.dirname(os.path.abspath(__file__))
 base_output_dir = cur_dir + "/../logs/"
 test_script_base = cur_dir + "/../apps/"
 
-is_dry_run = False
+is_dry_run = True
 runs = range(0, 5)
 runs = [0]
 
@@ -38,7 +38,7 @@ exp_groups = {
     },
     "blocks": {
         "apps" : ["redis"],
-        "cache_perc_list" : [2.5, 1.0, 0.75, 0.5, 0.25, 0.1, 0.05],
+        "cache_perc_list" : [1.0, 0.5, 0.25, 0.005],
         "block_sizes" : [4*1024, 64, 256, 512, 1*1024, 8*4*1024],
         "assocs" : [4],
     }

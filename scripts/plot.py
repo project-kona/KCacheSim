@@ -12,6 +12,7 @@ import logging
 from pprint import pformat
 import json
 import csv
+import os
 
 from apps import *
 
@@ -27,11 +28,12 @@ DEFAULT_PLOTLY_COLORS=['rgb(31, 119, 180)', 'rgb(255, 127, 14)',
 def plot(filename, data):
     # plot_4k(filename + "amat-4k", data)
     # plot_4k_multi_assocs(filename + "amat-4k-multi-assoc", data)
-    # plot_pberry_lines(filename + "amat-pberry-block-sweep", data)
+    plot_pberry_lines(filename + "amat-pberry-block-sweep", data)
     # plot_lat_sweep(filename + "amat-lat-sweep", data)
     # plot_amat_hit(filename + "amat-vs-miss-rate", data)
 
     plot_4k_paper(filename + "amat-vs-rss", data)
+    plot_block_sweep_paper(filename + "amat-pberry-block-sweep")
 
     # plot_pberry_lines_ppt(filename + "amat-pberry-block-sweep-ppt", data)
     # plot_cgroups(filename + "cgroups", data)
@@ -380,6 +382,79 @@ def plot_lat_sweep(filename, data):
     logging.info("Plot generated at: {}".format(file))
 
 
+def plot_block_sweep_paper(filename):
+    basedir = os.path.dirname(filename)
+    csv_file = basedir + "/amat-pberry-block-sweep-redis-rand.csv"
+
+    axis_title_font = dict(size=11, family='Calibri', color='black')
+    axis_tick_font=dict(size=12, family='Calibri', color='black')
+    legend_font=dict(size=11, family='Calibri', color='black')
+    subplot_title_font=dict(size=12, family='Calibri', color='black')
+
+    lines=['solid', '5px 10px 2px 2px', 'longdash', 'dashdot']
+
+    fig = go.Figure()
+
+    data = []
+    
+    with open(csv_file) as csvfile:
+        csvreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+        header = next(csvreader, None)
+        for row in csvreader:
+            data.append(row)
+
+    data_t = list(map(list, zip(*data)))
+    data_t = [[float(string) for string in inner] for inner in data_t]
+    data_t[0] = [float(x)/1000 for x in data_t[0]]
+    # pprint.pprint(data_t)
+    # pprint.pprint(header)
+
+
+    count = 0
+    for i in range(len(header)-1):
+        if header[i+1] not in ["0.0", "27.0", "54.0", "109.0"]:
+            print("Skipping " + str(header[i+1]))
+            continue
+
+        if header[i+1] == "109.0":
+            header[i+1] = "100.0"
+
+        fig.add_trace(go.Scatter(
+            name="{}%".format(header[i+1][:-2]), x=data_t[0],  y=data_t[i+1],
+            legendgroup="group",
+            showlegend=True,
+            line=dict(color=DEFAULT_PLOTLY_COLORS[count+3], width=1, dash=lines[count]),
+            marker=dict(symbol=i, size=5),
+            ))
+        count += 1
+
+    fig.update_xaxes(   showline=True, linewidth=1, linecolor='black',
+                        title_font=axis_title_font, tickfont=axis_tick_font,
+                        )
+
+    fig.update_yaxes(   rangemode='tozero',
+                        showline=True, linewidth=1, linecolor='black',
+                        title_font=axis_title_font, tickfont=axis_tick_font,
+                        range=[0,33])
+
+    fig.update_xaxes(title_text="Block Size (kB)")
+    fig.update_yaxes(title_text="AMAT (ns)")
+
+    fig.update_layout(
+        plot_bgcolor='white',
+        width=200, height=170,
+
+        margin=dict(t=0, b=0, l=0, r=10),
+
+        # Legend settings
+        legend=dict(font=legend_font, orientation="h", traceorder='normal',
+                    bordercolor="Black", borderwidth=0,
+                    y=1.01, x=0.5,
+                    xanchor='center', yanchor="top")
+        )
+
+    fig.write_image(filename + ".pdf")
+    logging.info("Plot generated at: {}".format(filename))
 
 def plot_pberry_lines(filename, data):
 
@@ -390,7 +465,7 @@ def plot_pberry_lines(filename, data):
             titles.append(props['name'])
             assocs = props['AMATs']['cachegrind']['pberry']['cache'].keys()
 
-    assocs = [4, 1024]
+    assocs = [4]
 
     for assoc in assocs:
         fig = make_subplots(rows=2, cols=4,
@@ -409,6 +484,7 @@ def plot_pberry_lines(filename, data):
 
                 amat_values = []
                 names = []
+                names_csv = []
                 blocks_arr = []
 
                 for perc, details in amats.items():
@@ -434,6 +510,7 @@ def plot_pberry_lines(filename, data):
 
                     amat_values.append(new_amats_list)
                     names.append("{}MB={}%".format(mem, round(perc, 2)))
+                    names_csv.append("{}".format(round(perc, 0)))
 
                 # logging.info("names={}", str(names))
 
@@ -447,6 +524,26 @@ def plot_pberry_lines(filename, data):
 
                 subplot_count += 1
 
+                # Generate CSV
+                if app in ['redis'] and method in ["rand"]:
+                    csv_data = []
+                    csv_data.append(blocks_arr)
+                    names_to_use = []
+                    for i in range(len(amat_values)):
+                        if (len(amat_values[i])) == len(blocks_arr):
+                            csv_data.append(amat_values[i])
+                            names_to_use.append(names_csv[i])
+
+                    transpose = list(map(list, zip(*csv_data)))
+                    header = names_to_use
+                    header.insert(0, "blocksize")
+                    transpose.insert(0, header)
+
+                    csv_file = "{}-{}-{}.csv".format(filename, app, method)
+                    with open(csv_file,"w+") as my_csv:
+                        csvWriter = csv.writer(my_csv,delimiter=',')
+                        csvWriter.writerows(transpose)
+
         # To generate HTML output:
         file = filename + "-assoc=" + str(assoc)
         pio.write_html(fig, file=file + ".html",
@@ -455,7 +552,6 @@ def plot_pberry_lines(filename, data):
         fig.write_image(file + ".pdf")
         fig.write_image(file + ".png")
         logging.info("Plot generated at: {}".format(file))
-
 
 def plot_pberry_lines_ppt(filename, data):
 

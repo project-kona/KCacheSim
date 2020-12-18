@@ -6,25 +6,26 @@ Make sure you have sudo access and at least 100GB free space for application dat
 
 Clone the repository and submodules
 ```
-# TODO: Clone command
+git clone --recurse-submodules https://github.com/project-kona/KCacheSim.git
+cd KCacheSim
 ```
 
 Install dependencies
 ```
-<repo_dir>/scripts/setup.sh
+./scripts/setup.sh
 ```
 
 Run everything
 ```
-python3 <repo_dir>/scripts/sweep.py
+python3 ./scripts/sweep.py
 ```
 
 All logs will be generated in `logs` directory
 
 Finally, generate all plots
 ```
-TODO: Add
+python3 ./scripts/gather-results.py
 ```
+All plots will be generated in `plots` directory.
 
-# Citations
-TODO: Add
+Note: Logs and plots from a sample run are stored in `saved=logs`

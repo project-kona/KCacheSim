@@ -15,11 +15,10 @@ Install dependencies
 ./scripts/setup.sh
 ```
 
-Run everything
+Run everything (this will take a long time and it is best to launch this inside a screen session)
 ```
 python3 ./scripts/sweep.py
 ```
-
 All logs will be generated in `logs` directory
 
 Finally, generate all plots

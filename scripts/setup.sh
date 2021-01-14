@@ -34,4 +34,4 @@ sudo python3 -m pip install psutil
 # Making sure orca is setup
 orca --help
 
-sudo python3 -m pip install chart_studio
+sudo python3 -m pip install chart_studio pandas matplotlib scipy

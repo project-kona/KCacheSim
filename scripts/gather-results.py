@@ -520,4 +520,5 @@ if __name__ == "__main__":
 
     logging.info("\n" + pformat(apps))
 
+    os.system("mkdir -p {}".format(cur_dir + "/../plots/"))
     plot (cur_dir + "/../plots/", apps)

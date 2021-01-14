@@ -11,7 +11,7 @@ cur_dir = os.path.dirname(os.path.abspath(__file__))
 base_output_dir = cur_dir + "/../logs/"
 test_script_base = cur_dir + "/../apps/"
 
-is_dry_run = True
+is_dry_run = False
 runs = range(0, 5)
 runs = [0]
 

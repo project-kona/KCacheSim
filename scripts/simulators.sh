@@ -1,3 +1,6 @@
+# Copyright © 2020-2021 VMware, Inc. All Rights Reserved.
+# SPDX-License-Identifier: BSD-2-Clause
+
 #!/bin/bash
 
 INTERNAL_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"

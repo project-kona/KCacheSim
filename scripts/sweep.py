@@ -1,3 +1,6 @@
+# Copyright © 2020-2021 VMware, Inc. All Rights Reserved.
+# SPDX-License-Identifier: BSD-2-Clause
+
 import logging, os, time, subprocess, math, json, pdb, multiprocessing, random
 from concurrent.futures.thread import ThreadPoolExecutor
 

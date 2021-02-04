@@ -1,3 +1,6 @@
+# Copyright © 2020-2021 VMware, Inc. All Rights Reserved.
+# SPDX-License-Identifier: BSD-2-Clause
+
 import logging, os, time, subprocess, glob
 from os import listdir
 from os.path import isfile, join

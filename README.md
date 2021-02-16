@@ -1,8 +1,12 @@
 # KCacheSim
 
+Details about KCacheSim are in the ASPLOS 2021 paper: [Rethinking Software Runtimes for Disaggregated Memory](https://asplos-conference.org/abstracts/asplos21-paper210-extended_abstract.pdf).   
+The artifacts and instructions are available from: [asplos21-ae](https://github.com/project-kona/asplos21-ae).
+
 ## Instructions
+
 These instructions have been tested on a clean Ubuntu 20.04 installation running on a CloudLab C6420 machine.
-Make sure you have sudo access and at least 100GB free space for application datasets and logs.
+Make sure you have sudo access and at least 128GB RAM and 100GB free space for application datasets and logs.
 
 Clone the repository and submodules
 ```

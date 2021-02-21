@@ -1,3 +1,6 @@
+# Copyright © 2019-2021 VMware, Inc. All Rights Reserved.
+# SPDX-License-Identifier: BSD-2-Clause
+
 import chart_studio
 import chart_studio.plotly as py
 import plotly.graph_objs as go
@@ -26,18 +29,15 @@ DEFAULT_PLOTLY_COLORS=['rgb(31, 119, 180)', 'rgb(255, 127, 14)',
                        ]
 
 def plot(filename, data):
-    # plot_4k(filename + "amat-4k", data)
-    # plot_4k_multi_assocs(filename + "amat-4k-multi-assoc", data)
     plot_pberry_lines(filename + "amat-pberry-block-sweep", data)
-    # plot_lat_sweep(filename + "amat-lat-sweep", data)
-    # plot_amat_hit(filename + "amat-vs-miss-rate", data)
-
     plot_4k_paper(filename + "amat-vs-rss", data)
     plot_block_sweep_paper(filename + "amat-pberry-block-sweep")
 
+    # plot_4k(filename + "amat-4k", data)
+    # plot_4k_multi_assocs(filename + "amat-4k-multi-assoc", data)
+    # plot_lat_sweep(filename + "amat-lat-sweep", data)
+    # plot_amat_hit(filename + "amat-vs-miss-rate", data)
     # plot_pberry_lines_ppt(filename + "amat-pberry-block-sweep-ppt", data)
-    # plot_cgroups(filename + "cgroups", data)
-
 
 
 def plot_amat_hit(filename, data):
@@ -137,210 +137,6 @@ def plot_amat_hit(filename, data):
     fig.write_image(file + ".pdf")
     fig.write_image(file + ".png")
     logging.info("Plot generated at: {}".format(file))
-
-
-
-
-# def plot_assoc_lines(filename, data):
-
-#     titles = []
-#     assocs = []
-#     for (app, methods) in apps.items():
-#         for (method,props) in methods["methods"].items():
-#             titles.append(props['name'])
-#             assocs = props["miss_rates"]["cachegrind"]["cache"].keys()
-
-#     fig = make_subplots(rows=2, cols=4,
-#                         subplot_titles=titles)
-
-#     fig.update_xaxes(title_text="Cache Size (% peak mem)" if perc_peak_mem else "Cache Size (% peak RSS)")
-#     fig.update_yaxes(title_text="Cache Miss Rate (%)", rangemode='tozero')
-#     fig.update_layout(title_text=("Assoc-Cache miss rates"))
-
-#     for assoc in assocs:
-
-#         subplot_count = 0
-#         for (app, methods) in apps.items():
-#             for (method,props) in methods["methods"].items():
-
-#                 miss_rates = props["miss_rates"]["cachegrind"]["cache"][assoc]
-
-#                 perc_mems = sorted(list(miss_rates.keys()))
-#                 miss_r = []
-#                 names = []
-
-#                 # We need a list of perc values for each block with a name 
-#                 data = dict()
-#                 for m in perc_mems:
-#                     blocks_list = miss_rates[m]['blocks']
-
-#                     perc_data = []
-#                     block_keys = blocks_list.keys()
-#                     for k in block_keys:
-#                         if k not in [4096]:
-#                             continue
-
-#                         rr = blocks_list[k][0] + blocks_list[k][1]
-#                         perc_data.append(rr)
-
-#                         pair = "b={}-a={}".format(k, assoc)
-#                         if pair not in data:
-#                             data[pair] = {'x': [], 'y': [], 'color_id': list(assocs).index(assoc)}
-
-#                         data[pair]['x'].append(m)
-#                         data[pair]['y'].append(rr)
-
-#                     miss_r.append(perc_data)
-#                     names.append("assoc={}".format(assoc))
-
-#                 logging.info("Original")
-#                 logging.info(pformat(miss_r))
-#                 logging.info(pformat(data))
-
-
-#                 # names = ["wall-time", "perf"]
-
-#                 # hovertemplate = ('x = Memory Limit = %{x}% = %{text}MB<br>'+
-#                 #                 'y = Time(s)/Perf = %{y} <br>'+
-#                 #                 '%{hovertext}')
-
-#                 # hover_infos = []
-#                 # mems = []
-#                 # for perc in perc_mems:
-#                 #     mem = perc*props['peak_mem'] if perc_peak_mem else perc*props['peak_rss']
-#                 #     mems.append(int(mem/1024/1024/100))
-
-#                 #     hover_text = ("Peak mem = {}MB<br>" + 
-#                 #                 "Peak RSS = {}MB"
-#                 #                 ).format(
-#                 #                         int(props['peak_mem']/1024/1024),
-#                 #                         int(props['peak_rss']/1024/1024)
-#                 #                         )
-#                 #     hover_infos.append(hover_text)
-
-
-#                 col = int(subplot_count%4)+1
-#                 row = int(subplot_count/4)+1
-
-#                 for (pair, points) in data.items():
-#                     fig.add_trace(go.Scatter(
-#                         # name="assoc={}, block={}".format(assoc, block),
-#                         name=pair,
-#                         x=points['x'],  y=points['y'],
-#                         legendgroup=pair,
-#                         showlegend=True if subplot_count is 0 else False,
-#                         line=dict(color=DEFAULT_PLOTLY_COLORS[points['color_id']]),
-#                         marker=dict(symbol=points['color_id'], size=10),
-#                         # text=mems,
-#                         # hovertext=hover_infos,
-#                         # hovertemplate=hovertemplate,
-#                         ), 
-#                         col = col, row = row)
-
-#                 subplot_count += 1
-
-#     # To generate HTML output:
-#     file = filename
-#     pio.write_html(fig, file=file + ".html",
-#                         auto_open=False, include_plotlyjs="cdn")
-    
-#     fig.write_image(file + ".pdf")
-#     fig.write_image(file + ".png")
-#     logging.info("Plot generated at: {}".format(file))
-
-
-
-
-def plot_cgroups(filename, data):
-
-    titles = []
-    assocs = []
-    for (app, methods) in apps.items():
-        for (method,props) in methods["methods"].items():
-            titles.append(props['name'])
-
-
-    names = ["wall-time", "perf"]
-
-    for i in range(2):
-        fig = make_subplots(rows=2, cols=4,
-                            subplot_titles=titles)
-
-        fig.update_xaxes(title_text="Cache Size (% peak mem)" if perc_peak_mem else "Cache Size (% peak RSS)")
-        fig.update_yaxes(title_text="Normalized Execution Time", rangemode='tozero')
-        fig.update_layout(title_text=("Cgroups wall-time" if i == 0 else "Cgroups perf stats"))
-
-        # We will end up with 10 combinations of app-method
-        subplot_count = 0
-        for (app, methods) in apps.items():
-            for (method,props) in methods["methods"].items():
-
-                perc_mems = sorted(list(props["cgroups-wall-time"].keys()))
-                wall_times = []
-                perfs = []
-                infiniswap_times = []
-                for m in perc_mems:
-                    wall_times.append(props["cgroups-wall-time"][m])
-                    perfs.append(props["cgroups-perf"][m])
-
-                    try:
-                        infiniswap_times.append(props["cgroups-infiniswap"][m])
-                    except:
-                        infiniswap_times.append(None)
-
-                hovertemplate = ('x = Memory Limit = %{x}% = %{text}MB<br>'+
-                                'y = Time(s)/Perf = %{y} <br>'+
-                                '%{hovertext}')
-
-                hover_infos = []
-                mems = []
-                for perc in perc_mems:
-                    mem = perc*props['peak_mem'] if perc_peak_mem else perc*props['peak_rss']
-                    mems.append(int(mem/1024/1024/100))
-
-                    hover_text = ("Peak mem = {}MB<br>" + 
-                                "Peak RSS = {}MB"
-                                ).format(
-                                        int(props['peak_mem']/1024/1024),
-                                        int(props['peak_rss']/1024/1024)
-                                        )
-                    hover_infos.append(hover_text)
-
-                if i == 0:
-                    traces = ["wall-time", "infiniswap"]
-                    data = [wall_times, infiniswap_times]
-                else:
-                    traces = ["perf"]
-                    data = [perfs]
-
-
-                col = int(subplot_count%4)+1
-                row = int(subplot_count/4)+1
-
-                for t in range(len(traces)):
-                    fig.add_trace(go.Scatter(
-                        name=traces[t], x=perc_mems,  y=data[t],
-                        legendgroup=traces[t],
-                        showlegend=True if subplot_count == 0 else False,
-                        line=dict(color=DEFAULT_PLOTLY_COLORS[t]),
-                        marker=dict(symbol=t, size=10),
-                        text=mems,
-                        hovertext=hover_infos,
-                        hovertemplate=hovertemplate,
-                        ), 
-                        col = col, row = row)
-
-                subplot_count += 1
-
-        # To generate HTML output:
-        file = filename + "-" + names[i]
-        pio.write_html(fig, file=file + ".html",
-                            auto_open=False, include_plotlyjs="cdn")
-        
-        fig.write_image(file + ".pdf")
-        fig.write_image(file + ".png")
-        logging.info("Plot generated at: {}".format(file))
-
 
 
 def plot_lat_sweep(filename, data):
@@ -456,6 +252,8 @@ def plot_block_sweep_paper(filename):
     fig.write_image(filename + ".pdf")
     logging.info("Plot generated at: {}".format(filename))
 
+
+
 def plot_pberry_lines(filename, data):
 
     titles = []
@@ -552,6 +350,8 @@ def plot_pberry_lines(filename, data):
         fig.write_image(file + ".pdf")
         fig.write_image(file + ".png")
         logging.info("Plot generated at: {}".format(file))
+
+
 
 def plot_pberry_lines_ppt(filename, data):
 
@@ -847,7 +647,6 @@ def plot_4k(filename, data):
         fig.write_image(file + ".pdf")
         fig.write_image(file + ".png")
         logging.info("Plot generated at: {}".format(file))
-
 
 
 def plot_4k_multi_assocs(filename, data):

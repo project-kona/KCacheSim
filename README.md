@@ -52,7 +52,7 @@ You only need to re-run `./scripts/gather-results.py` for new latency values to 
 
 ## Running Arbritary Applications with KCacheSim
 KCacheSim supports any applications which can run on Cachegrind.
-To add a new application KCacheSim infrastructure:
+To add a new application to KCacheSim infrastructure:
 1. Measure the application peak Resident Set Size (RSS), peak Virtual Memory (VM), and number of threads/cores.
 2. Add a new entry in `apps` dictionary in `scripts/apps.py` with application information.
 2. Modify `scripts/sweep.py` to include new application name in `exp_groups` dictionary.

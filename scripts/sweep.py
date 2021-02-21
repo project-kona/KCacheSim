@@ -12,11 +12,13 @@ cur_dir = os.path.dirname(os.path.abspath(__file__))
 
 #############################################
 base_output_dir = cur_dir + "/../logs/"
-test_script_base = cur_dir + "/../apps/"
+test_script_base = cur_dir + "/../../apps/"
 
 is_dry_run = False
 runs = range(0, 5)
 runs = [0]
+
+max_workers = 32
 
 is_local_exec = True
 sims = [
@@ -271,7 +273,7 @@ if __name__ == "__main__":
     logging.info("Executing: ")
     logging.info("*************************************")
 
-    executor = ThreadPoolExecutor(max_workers=32)
+    executor = ThreadPoolExecutor(max_workers=max_workers)
 
     with executor:
         futures = []
